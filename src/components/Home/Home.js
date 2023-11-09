@@ -3,7 +3,6 @@ import "./Home.css"
 import Carousel from 'react-elastic-carousel';
 import CarouselCards from '../Carousel/Carousel';
 import Slider from 'react-slick';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import LogoCards from '../LogoCards/LogoCards';
@@ -22,8 +21,8 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  speed: 2000,
-  autoplaySpeed: 2000,
+  speed: 3000,
+  autoplaySpeed: 3000,
   cssEase: 'linear',
 };
 
@@ -101,7 +100,7 @@ const Home = () => {
         </Slider>
       </div>
       <div className="page6 h-[90vh] flex justify-center items-center flex-col">
-        <img src={wordmark} alt="" className='h-[400px] w-[500px]' />
+        <img src={wordmark} alt="" className='h-[130px] w-[340px] relative bottom-[90px]' />
         <p className='text-white w-[70%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat tempora molestiae aliquid atque ratione, eaque iusto tempore consequatur? Reprehenderit, sed, consequatur quibusdam iusto accusamus officia aliquam ea minima eveniet debitis vitae natus voluptate fuga repellendus ipsa fugit delectus recusandae maiores magnam perferendis odio. Deleniti, vero sunt ipsam, facilis itaque illo ullam fugiat quod ducimus saepe ipsum corporis harum natus? Veniam eaque aliquid quasi deleniti dolorem nihil iste ullam officia, molestiae voluptas ea dignissimos, dolorum assumenda laboriosam velit consequatur, consequuntur ex quibusdam quam! Nisi accusamus, dolorum laborum corporis, porro nam sapiente, magni in suscipit eligendi facere. Accusantium, voluptas dicta repellendus voluptatum est quia repellat rem ea minus aliquid animi laboriosam maxime ipsum officia ipsa necessitatibus consectetur reprehenderit enim id nemo nisi numquam. Officiis deserunt ab, </p>
       </div>
     </>

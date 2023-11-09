@@ -3,14 +3,27 @@
     src: url("../../assets/Esporta.otf");
 }
 
+@font-face {
+    font-family: acidGrotesk;
+    src: url("../../assets/AcidGrotesk-Regular.otf");
+}
+
 .page1{
-    background-image: url("../../assets/bg-1.png"), url("../../assets/bg-logo-1.png");
+    background-image: url("../../assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat repeat;
+    font-family: acidGrotesk;
 }
 
 .page2{
     background-color: #000;
     background-image: url("../../assets/bg-2.png");
     background-size: cover;
+}
+
+.page2 .box1 .para{
+    font-family: acidGrotesk;
 }
 
 .page2 .box1 .box2{
@@ -48,4 +61,8 @@
 
 .page5{
     background: #2F2F2F;
+}
+
+.page6{
+    font-family: acidGrotesk;
 }

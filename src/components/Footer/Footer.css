@@ -1,0 +1,11 @@
+@font-face {
+    font-family: acidGrotesk;
+    src: url("../../assets/AcidGrotesk-Regular.otf");
+}
+
+.footer{
+    background-image: url("../../assets/footer-bg.png");
+    background-size: cover;
+    background-position: center;
+    font-family: acidGrotesk;
+}
