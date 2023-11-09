@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    background-image: url("../../assets/bg-1.png");
+}
+
+.navbar img {
+    height: 50px;
+    width: 70px;
+}
+
+.navbar .navItems ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar .navItems ul li{
+    padding-right: 10px;
+}
