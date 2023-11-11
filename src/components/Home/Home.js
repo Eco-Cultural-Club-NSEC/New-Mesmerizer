@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <>
       <div className="page1 h-[88vh] flex justify-center items-center flex-col">
-        <img src={heroLogo} alt="" className='lg:h-[700px] h-[300px] lg:w-[900px] w-[500px] relative bottom-[50px]' />
+        <img src={heroLogo} alt="" className='lg:h-[700px] h-[300px] lg:w-[900px] w-[500px] relative lg:bottom-[120px] lg:top-[-40px] top-[60px]' />
         <div className="statistics text-white lg:divide-x-4 flex lg:flex-row flex-col sm:justify-center sm:items-center relative lg:bottom-[120px]">
           <div className='stats flex'>
             <div className="numeroStats lg:text-[65px] text-[45px] mr-2">7000+</div>

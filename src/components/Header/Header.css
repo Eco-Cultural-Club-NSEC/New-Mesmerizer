@@ -5,11 +5,6 @@
     background-repeat: no-repeat;
 }
 
-.navbar img {
-    height: 50px;
-    width: 70px;
-}
-
 .navbar .navItems ul{
     display: flex;
     flex-direction: row;
