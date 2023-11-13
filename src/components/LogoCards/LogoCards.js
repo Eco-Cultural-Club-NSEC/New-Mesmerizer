@@ -1,8 +1,8 @@
 import React from 'react'
 
-const LogoCards = () => {
+const LogoCards = (props) => {
   return (
-    <div className='h-[100px] w-[300px] bg-red-800'>Logo</div>
+    <img src={props.img} alt="" className='lg:h-[180px] h-[100px] lg:w-[300px] w-[200px] lg:mx-[20px] lg:px-[40px] mx-[30px] grayscale hover:grayscale-0 cursor-pointer' />
   )
 }
 
