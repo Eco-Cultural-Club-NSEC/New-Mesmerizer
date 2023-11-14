@@ -41,7 +41,7 @@
 
 .individual-event li {
   font-family: acidGrotesk;
-  font-size: 30px;
+  /* font-size: 30px; */
   color: white;
 }
 
@@ -57,7 +57,7 @@
 
 .individual-event span {
   font-family: eSporta;
-  font-size: 43px;
+  /* font-size: 43px; */
   color: white;
 }
 
