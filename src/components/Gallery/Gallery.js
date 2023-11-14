@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import bgImg from "../../assets/bg-1.png";
 import ImageCard2 from "../ImageCard2/ImageCard2";
 import "react-responsive-modal/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay,EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import 'swiper/css/effect-coverflow';
 import ImageCard1 from "../ImageCard1/ImageCard1";
 import img1 from "../../data/Images";
 import "./Gallery.css";
@@ -19,7 +20,15 @@ const Gallery = () => {
       <div className=" pl-[50px] lg:pl-[100px]">
         <Swiper
           loop={true}
-          modules={[Autoplay]}
+          effect={'coverflow'}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          modules={[Autoplay,EffectCoverflow]}
           spaceBetween={50}
           slidesPerView={3}
           autoplay={{ delay: 3000 }}
