@@ -12,11 +12,11 @@ function ImageCard2({url}) {
   };
 
   return (
-    <div className="pt-[40px] h-[250px] w-[250px] lg:h-[500px] lg:w-[500px]">
+    <>
       <img
         src={url}
         alt="pic"
-        className="border border-white h-[150px] w-[250px] lg:h-[250px] lg:w-[400px]"
+        className="border border-white"
         onClick={() => {
           openModal(url);
         }}
@@ -30,7 +30,7 @@ function ImageCard2({url}) {
       >
         <img src={imageUrl} alt="pic" />
       </Modal>
-    </div>
+    </>
   );
 }
 

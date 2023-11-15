@@ -1,56 +1,53 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bgImg from "../../assets/bg-1.png";
 import ImageCard2 from "../ImageCard2/ImageCard2";
 import "react-responsive-modal/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay,EffectCoverflow } from "swiper/modules";
+import {
+  Autoplay,
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-import 'swiper/css/effect-coverflow';
+import "swiper/css/effect-coverflow";
 import ImageCard1 from "../ImageCard1/ImageCard1";
 import img1 from "../../data/Images";
 import "./Gallery.css";
+import "./Gallery2.css";
 
 const Gallery = () => {
+
   return (
     <div style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }}>
       <h1 className="flex justify-center items-center p-6 lg:mb-[60px] text-purple-600 lg:text-[50px] text-xl">
         GALLERY
       </h1>
-      <div className=" pl-[50px] lg:pl-[100px]">
+      <div className="container">
         <Swiper
+          effect={"coverflow"}
+          centeredSlides={true}
           loop={true}
-          effect={'coverflow'}
+          slidesPerView={"auto"}
           coverflowEffect={{
-            rotate: 50,
+            rotate: 0,
             stretch: 0,
             depth: 100,
-            modifier: 1,
-            slideShadows: true,
+            modifier: 2.5,
           }}
-          modules={[Autoplay,EffectCoverflow]}
-          spaceBetween={50}
-          slidesPerView={3}
-          autoplay={{ delay: 3000 }}
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            600: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 2,
-              spaceBetween: 50,
-            },
-            1440: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
           }}
-          className="mySwiper"
+          pagination={{ el: ".swiper-pagination", clickable: true }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            clickable: true,
+          }}
+          modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}
+          className="swiper_container"
         >
           {img1.map((e) => {
             return (

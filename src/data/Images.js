@@ -22,6 +22,10 @@ let img1 = [
     {
         id: 6,
         url: 'https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg'
+    },
+    {
+        id: 7,
+        url: 'https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg'
     }
 ]
 
