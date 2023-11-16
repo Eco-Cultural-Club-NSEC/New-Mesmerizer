@@ -58,8 +58,8 @@ const Gallery = () => {
           })}
         </Swiper>
       </div>
-      <div className="marquee px-5">
-        <ul className="marquee__content">
+      <div className="marquee1 px-5">
+        <ul className="marquee__content1">
           {img.img2.map((e) => {
             return (
               <li className="lg:px-3" key={e.id}>
@@ -76,8 +76,8 @@ const Gallery = () => {
           })}
         </ul>
       </div>
-      <div className="marquee px-5">
-        <ul className="marquee__content">
+      <div className="marquee1 px-5">
+        <ul className="marquee__content1">
           {img.img3.map((e) => {
             return (
               <li className="lg:px-3" key={e.id}>

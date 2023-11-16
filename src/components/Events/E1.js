@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Events.css";
 import demoImage from "../../assets/demo-event-image.png";
 
 const E1 = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="individual-event flex flex-col justify-center items-center lg:h-[165vh] h-[100vh]">
       <div className="flex justify-center items-center">
@@ -12,7 +17,6 @@ const E1 = () => {
           alt=""
         />
       </div>
-
       <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">Western Mistique</h1>
       <div className=" flex flex-col lg:flex placeholder:mt-4 lg:w-full w-80">
         <div className="flex flex-col lg:flex-row  justify-between">
