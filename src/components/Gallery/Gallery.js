@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import bgImg from "../../assets/bg-1.png";
 import ImageCard2 from "../ImageCard2/ImageCard2";
 import "react-responsive-modal/styles.css";
@@ -13,7 +13,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import ImageCard1 from "../ImageCard1/ImageCard1";
-import img1 from "../../data/Images";
+import img from "../../data/Images";
 import "./Gallery.css";
 import "./Gallery2.css";
 
@@ -24,7 +24,7 @@ const Gallery = () => {
       <h1 className="flex justify-center items-center p-6 lg:mb-[60px] text-purple-600 lg:text-[50px] text-xl">
         GALLERY
       </h1>
-      <div className="container">
+      <div className="container lg:px-4">
         <Swiper
           effect={"coverflow"}
           centeredSlides={true}
@@ -49,7 +49,7 @@ const Gallery = () => {
           modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}
           className="swiper_container"
         >
-          {img1.map((e) => {
+          {img.img1.map((e) => {
             return (
               <SwiperSlide key={e.id}>
                 <ImageCard2 url={e.url} />
@@ -60,14 +60,14 @@ const Gallery = () => {
       </div>
       <div className="marquee px-5">
         <ul className="marquee__content">
-          {img1.map((e) => {
+          {img.img2.map((e) => {
             return (
               <li className="lg:px-3" key={e.id}>
                 <ImageCard1 url={e.url} />
               </li>
             );
           })}
-          {img1.map((e) => {
+          {img.img2.map((e) => {
             return (
               <li className="lg:px-3" key={e.id}>
                 <ImageCard1 url={e.url} />
@@ -78,14 +78,14 @@ const Gallery = () => {
       </div>
       <div className="marquee px-5">
         <ul className="marquee__content">
-          {img1.map((e) => {
+          {img.img3.map((e) => {
             return (
               <li className="lg:px-3" key={e.id}>
                 <ImageCard1 url={e.url} />
               </li>
             );
           })}
-          {img1.map((e) => {
+          {img.img3.map((e) => {
             return (
               <li className="lg:px-3" key={e.id}>
                 <ImageCard1 url={e.url} />
