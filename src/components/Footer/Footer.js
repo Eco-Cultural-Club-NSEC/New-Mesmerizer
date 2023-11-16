@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="logo lg:h[100px] h-[60px] lg:w-[300px] flex flex-col justify-center items-center lg:mt-[70px]">
         <img src={logo1} alt="" className='lg:h-[130px] h-[60px] lg:w-[340px]' />
         <div className="socials lg:mt-[30px] mt-[6px]">
-          <i className="fa-brands fa-instagram text-white lg:text-[40px] text-[20px] lg:mr-[50px] mr-[20px]"></i>
-          <i className="fa-brands fa-facebook text-white lg:text-[40px] text-[20px]"></i>
+          <a href="https://www.instagram.com/ecoculturalclub_nsec/" target='_blank'><i className="fa-brands fa-instagram text-[#FFFF00] lg:text-[40px] text-[20px] lg:mr-[50px] mr-[20px]"></i></a>
+          <a href="https://www.facebook.com/ecoculturalclubofnsec" target='_blank'><i className="fa-brands fa-facebook text-[#FFFF00] lg:text-[40px] text-[20px]"></i></a>
         </div>
       </div>
       <div className="content flex justify-center items-center text-white lg:mt-[100px] lg:flex-row flex-col">

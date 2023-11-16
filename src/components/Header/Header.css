@@ -1,8 +1,14 @@
+@font-face {
+    font-family: acidGrotesk;
+    src: url("../../assets/AcidGrotesk-Regular.otf");
+  }
+
 .navbar {
     display: flex;
     background-image: url("../../assets/bg-1.png");
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: acidGrotesk;
 }
 
 .navbar .navItems ul{
