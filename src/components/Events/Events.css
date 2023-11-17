@@ -1,0 +1,102 @@
+.events {
+  background-image: url("../../assets/events.png");
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.events h1 {
+  font-family: eSporta;
+  /* text-align: center; */
+  /* font-size: 100px; */
+  /* text-shadow: 
+  3px 5px  #FF00CC;
+  color:#00CCFF; */
+}
+
+.purple-main{
+  text-shadow: 
+  2px 5px black,
+  3px 7px #00CCFF;
+  color:#FF00CC;
+}
+
+.blue-main{
+  text-shadow:
+  2px 5px black,
+  3px 7px #FF00CC;
+  color: #00CCFF;
+}
+
+.individual-event {
+  background-image: url("../../assets/individual-event.png");
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.individual-event li {
+  font-family: acidGrotesk;
+  /* font-size: 30px; */
+  color: white;
+}
+
+.individual-event p {
+  font-family: acidGrotesk;
+  font-weight: bolder;
+}
+
+.individual-event h1 {
+  font-family: eSporta;
+  text-align: center;
+}
+
+.individual-event span {
+  font-family: eSporta;
+  /* font-size: 43px; */
+  color: white;
+}
+
+/* .grid-container {
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  align-items: center;
+}
+.event-img {
+  width: 297px;
+  height: 342px;
+} */
+
+/* @media (max-width: 321px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-gap: 1rem;
+  }
+  .event-img {
+    width: 500px;
+    height: 300px;
+  }
+} */
+
+
+.btn-event {
+  box-shadow: 5px 5px 4px #ff00cc;
+  font-family: eSporta;
+}
+
+.ind-event-btn{
+  font-family:acidGrotesk;
+  font-weight: bolders;
+  background-color:#FFFF00;
+  
+}
+
+
+
