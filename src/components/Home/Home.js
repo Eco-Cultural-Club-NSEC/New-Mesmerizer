@@ -45,7 +45,7 @@ import { Autoplay, EffectCoverflow } from 'swiper/modules';
 const Home = () => {
   return (
     <>
-      <div className="page1 h-[88vh] flex justify-center items-center flex-col border border-b-">
+      <div className="page1 h-[88vh] flex justify-center items-center flex-col">
         <img src={heroLogo} alt="" className='lg:h-[700px] h-[300px] lg:w-[900px] w-[500px] relative lg:bottom-[120px] lg:top-[-40px] top-[10px]' />
         <div className="statistics text-white lg:divide-x-4 flex lg:flex-row flex-col justify-center items-center relative lg:bottom-[120px] lg:top-[-130px] top-[10px]">
           <div className="flex lg:divide-x-4 divide-x-2 lg:justify-center justify-between">
@@ -154,30 +154,6 @@ const Home = () => {
         </Swiper>
       </div>
       <div className="page5 lg:h-[40vh] h-[27vh] flex items-center justify-center">
-        {/* <Slider {...settings} className='lg:w-[95%] w-[95%]'>
-          <LogoCards img={sp1} />
-          <LogoCards img={sp2} />
-          <LogoCards img={sp3} />
-          <LogoCards img={sp4} />
-          <LogoCards img={sp5} />
-          <LogoCards img={sp6} />
-          <LogoCards img={sp7} />
-          <LogoCards img={sp8} />
-          <LogoCards img={sp9} />
-          <LogoCards img={sp10} />
-          <LogoCards img={sp11} />
-          <LogoCards img={sp12} />
-          <LogoCards img={sp13} />
-          <LogoCards img={sp14} />
-          <LogoCards img={sp15} />
-          <LogoCards img={sp16} />
-          <LogoCards img={sp17} />
-          <LogoCards img={sp18} />
-          <LogoCards img={sp19} />
-          <LogoCards img={sp20} />
-          <LogoCards img={sp21} />
-          <LogoCards img={sp22} />
-        </Slider> */}
         <div className="marquee">
           <div className="marquee__content px-[20px] ">
             <LogoCards img={sp1} />
