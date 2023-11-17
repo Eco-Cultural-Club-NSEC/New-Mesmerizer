@@ -1,6 +1,6 @@
 @media (min-width: 1440px) {
   .container {
-    zoom: 1.7;
+    zoom: 1.4;
   }
 }
 
@@ -16,9 +16,10 @@
   }
 }
 .swiper_container {
-  height: 32rem;
+  height: 30rem;
   padding: 2rem 0;
   position: relative;
+  width: 100%;
 }
 
 .swiper-slide {

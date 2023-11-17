@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from './components/Home/Home';
 import Events from './components/Events/Events';
 import Gallery from "./components/Gallery/Gallery";
+import ComingSoon from './components/ComingSoon/ComingSoon'
 import E1 from './components/Events/E1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,7 +23,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/events",
-        element: <Events/>,
+        element: <ComingSoon/>,
+      },
+      {
+        path: "/grab",
+        element: <ComingSoon/>
       },
       {
         path: "/gallery",

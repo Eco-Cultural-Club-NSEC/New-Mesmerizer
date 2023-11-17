@@ -4,6 +4,7 @@ import logo from '../../assets/logo.png'
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 import bgImage from "../../assets/bg-1.png";
+import ComingSoon from '../ComingSoon/ComingSoon';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,9 @@ const Header = () => {
                                 </li>
                             </ul>
                         </div>
-                        <button className='bg-cyan-400 font-semibold lg:px-6 px-2 py-1 rounded-lg relative lg:left-0 left-[32px] bottom-[4px] lg:text-[18px] text-[14px]' style={{ boxShadow: "3px 3px yellow" }}>Grab your passes</button>
+                        <Link to="/grab">
+                            <button className='bg-cyan-400 font-semibold lg:px-6 px-2 py-1 rounded-lg relative lg:left-0 left-[32px] bottom-[4px] lg:text-[18px] text-[14px]' style={{ boxShadow: "3px 3px yellow" }}>Grab your passes</button>
+                        </Link>
                     </div>
                     <div className="lg:hidden mr-4">
                         <button onClick={toggle}>{isOpen ? <HiX className='text-white text-[30px]' /> : <HiMenuAlt1 className='text-white text-[30px]' />}</button>
@@ -38,7 +41,7 @@ const Header = () => {
             </div>
             {
                 isOpen && (
-                    <div className="navItems flex flex-col p-3 justify-center items-center backdrop-blur-xl bg-black/30 text-[20px]" style={{backgroundColor:"#0e151b"}} >
+                    <div className="navItems flex flex-col p-3 justify-center items-center backdrop-blur-xl bg-black/30 text-[20px]" style={{ backgroundColor: "#0e151b" }} >
                         <ul className='text-center'>
                             <ul>
                                 <li className='text-white mb-4'>
@@ -56,4 +59,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header

@@ -45,7 +45,7 @@ import { Autoplay, EffectCoverflow } from 'swiper/modules';
 const Home = () => {
   return (
     <>
-      <div className="page1 h-[88vh] flex justify-center items-center flex-col border border-b-">
+      <div className="page1 h-[88vh] flex justify-center items-center flex-col">
         <img src={heroLogo} alt="" className='lg:h-[700px] h-[300px] lg:w-[900px] w-[500px] relative lg:bottom-[120px] lg:top-[-40px] top-[10px]' />
         <div className="statistics text-white lg:divide-x-4 flex lg:flex-row flex-col justify-center items-center relative lg:bottom-[120px] lg:top-[-130px] top-[10px]">
           <div className="flex lg:divide-x-4 divide-x-2 lg:justify-center justify-between">

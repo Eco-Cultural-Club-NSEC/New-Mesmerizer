@@ -21,10 +21,10 @@ const Gallery = () => {
 
   return (
     <div style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }}>
-      <h1 className="flex justify-center items-center p-6 lg:mb-[60px] text-purple-600 lg:text-[50px] text-xl">
+      <h1 className="blue-main flex justify-center items-center p-6 lg:mb-[60px] text-purple-600 lg:text-[100px] text-[50px]">
         GALLERY
       </h1>
-      <div className="container lg:px-4">
+      <div className="container lg:px-0 px-2">
         <Swiper
           effect={"coverflow"}
           centeredSlides={true}
