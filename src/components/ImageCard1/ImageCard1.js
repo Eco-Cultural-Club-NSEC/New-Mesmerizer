@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-responsive-modal";
+import ImageComponent from "../ImageComponent/ImageComponent";
 
 function ImageCard1({url}) {
-  // let url1 = "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg";
-
   const [open, setOpen] = useState(false);
   const [imageUrl, setImageUrl] = useState("");
 
@@ -14,15 +13,26 @@ function ImageCard1({url}) {
 
   return (
     <div className="h-[200px] w-[200px] lg:h-[300px] lg:w-[300px]">
-      <img
-        src={url}
-        alt="pic"
-        loading="lazy"
-        className="border border-white h-[130px] w-[200px] lg:h-[180px] lg:w-[300px]"
+
+      <ImageComponent
+        source={url}
+        styles="border border-white h-[130px] w-[200px] lg:h-[180px] lg:w-[300px]"
+        width={270}
+        height={180}
         onClick={() => {
           openModal(url);
         }}
-      ></img>
+        />
+      {/* <img */}
+      {/*   src={url} */}
+      {/*   alt="pic" */}
+      {/*   loading="lazy" */}
+      {/*   className="border border-white h-[130px] w-[200px] lg:h-[180px] lg:w-[300px]" */}
+      {/*   onClick={() => { */}
+      {/*     openModal(url); */}
+      {/*   }} */}
+      {/* ></img> */}
+
       <Modal
         open={open}
         onClose={() => {
