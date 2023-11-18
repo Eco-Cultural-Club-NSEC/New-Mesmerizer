@@ -1,109 +1,109 @@
 let img1 = [
     {
         id: 1,
-        url: 'https://i.imgur.com/kP9gUjq.jpeg'
+        url: '/1st_Carousel/1_1st.webp'
     },
     {
         id: 2,
-        url: 'https://i.imgur.com/H8gWH9p.jpg'
+        url: '/1st_Carousel/2_1st.webp'
     },
     {
         id: 3,
-        url: 'https://i.imgur.com/Bz02Mvf.jpg'
+        url: '/1st_Carousel/3_1st.webp'
     },
     {
         id: 4,
-        url: 'https://i.imgur.com/wHNDQ1D.jpg'
+        url: '/1st_Carousel/4_1st.webp'
     },
     {
         id: 5,
-        url: 'https://i.imgur.com/zYQqbNe.jpg'
+        url: '/1st_Carousel/5_1st.webp'
     },
     {
         id: 6,
-        url: 'https://i.imgur.com/dZAD9jw.jpg'
+        url: '/1st_Carousel/6_1st.webp'
     },
     {
         id: 7,
-        url: 'https://i.imgur.com/nw7EWia.jpg'
+        url: '/1st_Carousel/7_1st.webp'
     },
     {
         id: 8,
-        url: 'https://i.imgur.com/nw7EWia.jpg'
+        url: '/1st_Carousel/8_1st.webp'
     }
 ]
 
 let img2 = [
     {
         id: 1,
-        url: 'https://i.imgur.com/vhuCoH9.jpg'
+        url: '/2nd_Carousel/1_2nd.webp'
     },
     {
         id: 2,
-        url: 'https://i.imgur.com/TjgNWKo.jpg'
+        url: '/2nd_Carousel/2_2nd.webp'
     },
     {
         id: 3,
-        url: 'https://i.imgur.com/al5uAtu.jpg'
+        url: '/2nd_Carousel/3_2nd.webp'
     },
     {
         id: 4,
-        url: 'https://i.imgur.com/pMDLc8O.jpg'
+        url: '/2nd_Carousel/4_2nd.webp'
     },
     {
         id: 5,
-        url: 'https://i.imgur.com/CqPfoRb.jpg'
+        url: '/2nd_Carousel/5_2nd.webp'
     }
 ]
 
 let img3 = [
     {
         id: 1,
-        url: 'https://i.imgur.com/ymPaQ1h.jpg'
+        url: '/3rd_Carousel/1_3rd.webp'
     },
     {
         id: 2,
-        url: 'https://i.imgur.com/P3CB2aX.jpg'
+        url: '/3rd_Carousel/2_3rd.webp'
     },
     {
         id: 3,
-        url: 'https://i.imgur.com/L50XLfb.jpg'
+        url: '/3rd_Carousel/3_3rd.webp'
     },
     {
         id: 4,
-        url: 'https://i.imgur.com/4K1ZokR.jpg'
+        url: '/3rd_Carousel/4_3rd.webp'
     },
     {
         id: 5,
-        url: 'https://i.imgur.com/v96oegK.jpg'
+        url: '/3rd_Carousel/5_3rd.webp'
     },
     {
         id: 6,
-        url: 'https://i.imgur.com/TXrkCi6.jpg'
+        url: '/3rd_Carousel/6_3rd.webp'
     },
     {
         id: 7,
-        url: 'https://i.imgur.com/LJ2V3PO.jpg'
+        url: '/3rd_Carousel/7_3rd.webp'
     },
     {
         id: 8,
-        url: 'https://i.imgur.com/fRM5uuG.jpg'
+        url: '/3rd_Carousel/8_3rd.webp'
     },
     {
         id: 9,
-        url: 'https://i.imgur.com/SDHq19G.jpg'
+        url: '/3rd_Carousel/9_3rd.webp'
     },
     {
         id: 10,
-        url: 'https://i.imgur.com/TxhJbEd.jpg'
+        url: '/3rd_Carousel/10_3rd.webp'
     },
     {
         id: 11,
-        url: 'https://i.imgur.com/icibrFF.jpg'
+        url: '/3rd_Carousel/11_3rd.webp'
     },
     {
         id: 12,
-        url: 'https://i.imgur.com/bIzp1Kr.jpg'
+        url: '/3rd_Carousel/12_3rd.webp'
     }
 ]
 

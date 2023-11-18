@@ -9,7 +9,7 @@
 }
 
 .page1 {
-  background-image: url("../../assets/bg-1.png");
+  background-image: url("../../assets/bg-1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
 
 .page2 {
   background-color: #000;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/bg-2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/bg-2.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +48,7 @@
 
 .page4,
 .page6 {
-  background-image: url("../../assets/bg-1.png");
+  background-image: url("../../assets/bg-1.webp");
 }
 
 .page4 .artistHeading h1 {

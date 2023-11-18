@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer lg:h-[110vh] h-[100vh] flex flex-col justify-center items-center">
       <div className="logo lg:h[100px] h-[60px] lg:w-[300px] flex flex-col justify-center items-center lg:mt-[70px]">
-        <img src={logo1} alt="" className='lg:h-[130px] h-[60px] lg:w-[340px]' />
+        <img src={logo1} alt="" loading="lazy" className='lg:h-[130px] h-[60px] lg:w-[340px]' />
         <div className="socials lg:mt-[30px] mt-[6px]">
           <a href="https://www.instagram.com/ecoculturalclub_nsec/" target='_blank'><i className="fa-brands fa-instagram text-[#FFFF00] lg:text-[40px] text-[20px] lg:mr-[50px] mr-[20px]"></i></a>
           <a href="https://www.facebook.com/ecoculturalclubofnsec" target='_blank'><i className="fa-brands fa-facebook text-[#FFFF00] lg:text-[40px] text-[20px]"></i></a>
@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       <div className="credits lg:text-[12px] text-[9px] text-white flex flex-col justify-center items-center lg:mt-[70px] mt-[30px]">
         <p>Brought to you by</p>
-        <img src={logo2} className='lg:h-[80px] h-[50px] lg:w-[90px] w-[50px]' />
+        <img src={logo2} loading="lazy" className='lg:h-[80px] h-[50px] lg:w-[90px] w-[50px]' />
         <p>© Mesmerizer 2024</p>
         <p>Proudly created by Tech Team of Eco Cultural Club, NSEC</p>
       </div>

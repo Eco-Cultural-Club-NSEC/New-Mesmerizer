@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "../../assets/bg-1.png";
+import bgImg from "../../assets/bg-1.webp";
 import ImageCard2 from "../ImageCard2/ImageCard2";
 import "react-responsive-modal/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
