@@ -14,7 +14,7 @@ const E1 = () => {
         <img
           className=" lg:w-[1112px] lg:h-[392px] w-[250px] h-[110px] mt-4"
           src={demoImage}
-          alt=""
+          alt="demoimage"
         />
       </div>
       <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">Western Mistique</h1>

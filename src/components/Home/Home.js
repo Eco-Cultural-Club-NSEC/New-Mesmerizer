@@ -1,40 +1,40 @@
 import React from 'react'
 import "./Home.css"
-import heroLogo from "../../assets/bg-logo-1.png"
+import heroLogo from "../../assets/bg-logo-1.webp"
 import CarouselCards from '../Carousel/Carousel';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import LogoCards from '../LogoCards/LogoCards';
-import wordmark from "../../assets/wordmark.png"
-import Chandrabindoo from "../../assets/artist/Chandrabindoo.png";
-import Cactus from "../../assets/artist/Cactus.png";
-import EPR from "../../assets/artist/EPRIyer.png";
-import Fossils from "../../assets/artist/Fossils.png";
-import Javed from "../../assets/artist/JavedAli.png";
-import KK from "../../assets/artist/KK.png";
-import Kunal from "../../assets/artist/KunalGunjawala.png";
-import sp1 from "../../assets/sponsors/sp1.png";
-import sp2 from "../../assets/sponsors/sp2.png";
-import sp3 from "../../assets/sponsors/sp3.png";
-import sp4 from "../../assets/sponsors/sp4.png";
-import sp5 from "../../assets/sponsors/sp5.png";
-import sp6 from "../../assets/sponsors/sp6.png";
-import sp7 from "../../assets/sponsors/sp7.png";
-import sp8 from "../../assets/sponsors/sp8.png";
-import sp9 from "../../assets/sponsors/sp9.png";
-import sp10 from "../../assets/sponsors/sp10.png";
-import sp11 from "../../assets/sponsors/sp11.png";
-import sp12 from "../../assets/sponsors/sp12.png";
-import sp13 from "../../assets/sponsors/sp13.png";
-import sp14 from "../../assets/sponsors/sp14.png";
-import sp15 from "../../assets/sponsors/sp15.png";
-import sp16 from "../../assets/sponsors/sp16.png";
-import sp17 from "../../assets/sponsors/sp17.png";
-import sp18 from "../../assets/sponsors/sp18.png";
-import sp19 from "../../assets/sponsors/sp19.png";
-import sp20 from "../../assets/sponsors/sp20.png";
-import sp21 from "../../assets/sponsors/sp21.png";
-import sp22 from "../../assets/sponsors/sp22.png";
+import wordmark from "../../assets/wordmark.webp"
+import Chandrabindoo from "../../assets/artist/Chandrabindoo.webp";
+import Cactus from "../../assets/artist/Cactus.webp";
+import EPR from "../../assets/artist/EPRIyer.webp";
+import Fossils from "../../assets/artist/Fossils.webp";
+import Javed from "../../assets/artist/JavedAli.webp";
+import KK from "../../assets/artist/KK.webp";
+import Kunal from "../../assets/artist/KunalGunjawala.webp";
+import sp1 from "../../assets/sponsors/sp1.webp";
+import sp2 from "../../assets/sponsors/sp2.webp";
+import sp3 from "../../assets/sponsors/sp3.webp";
+import sp4 from "../../assets/sponsors/sp4.webp";
+import sp5 from "../../assets/sponsors/sp5.webp";
+import sp6 from "../../assets/sponsors/sp6.webp";
+import sp7 from "../../assets/sponsors/sp7.webp";
+import sp8 from "../../assets/sponsors/sp8.webp";
+import sp9 from "../../assets/sponsors/sp9.webp";
+import sp10 from "../../assets/sponsors/sp10.webp";
+import sp11 from "../../assets/sponsors/sp11.webp";
+import sp12 from "../../assets/sponsors/sp12.webp";
+import sp13 from "../../assets/sponsors/sp13.webp";
+import sp14 from "../../assets/sponsors/sp14.webp";
+import sp15 from "../../assets/sponsors/sp15.webp";
+import sp16 from "../../assets/sponsors/sp16.webp";
+import sp17 from "../../assets/sponsors/sp17.webp";
+import sp18 from "../../assets/sponsors/sp18.webp";
+import sp19 from "../../assets/sponsors/sp19.webp";
+import sp20 from "../../assets/sponsors/sp20.webp";
+import sp21 from "../../assets/sponsors/sp21.webp";
+import sp22 from "../../assets/sponsors/sp22.webp";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -212,7 +212,7 @@ const Home = () => {
         </div>
       </div>
       <div className="page6 lg:h-[90vh] h-[60vh] flex justify-center items-center flex-col">
-        <img src={wordmark} alt="" className='lg:h-[160px] h-[60px] lg:w-[380px] relative lg:bottom-[60px] ' />
+        <img src={wordmark} alt="woodwork" className='lg:h-[160px] h-[60px] lg:w-[380px] relative lg:bottom-[60px] ' />
         <p className='text-white text-center lg:w-[80%] w-[90%] lg:text-[19px] text-[10px] lg:mt-0 mt-10'>Welcome to Mesmerizer, organised by the Netaji Subhash Engineering College the beating heart of Kolkata's cultural scene for 14 spellbinding editions.Picture this: Fossils, KK, Javed Ali, EPR Iyer, Trap, and Stebin Ben - Yep, they've all left their musical imprints here! <br />
           Who's behind the curtain you ask? It's the NSEC Eco Cultural Club,led by a gang of creative masterminds who thrive on teamwork and knows how to party like there's no tomorrow.Our 15th edition in 2024 is all about 'Myth, Magic, and Mayhem,' promising an unforgettable ride through the realms of imagination.
           <br /><br />

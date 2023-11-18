@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"
-import logo1 from "../../assets/wordmark.png"
-import logo2 from "../../assets/eco-logo.png"
+import logo1 from "../../assets/wordmark.webp"
+import logo2 from "../../assets/eco-logo.webp"
 
 const Footer = () => {
   return (
@@ -28,12 +28,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="gmap lg:ml-10 lg:mt-0 mt-10">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.7432998021054!2d88.41237027527528!3d22.47627877956038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02722b05a38e87%3A0x276c0d30e6be12ea!2sNetaji%20Subhash%20Engineering%20College!5e0!3m2!1sen!2sin!4v1699559167827!5m2!1sen!2sin" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-[200px] h-[200px] lg:h-[280px] lg:w-[400px]'></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.7432998021054!2d88.41237027527528!3d22.47627877956038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02722b05a38e87%3A0x276c0d30e6be12ea!2sNetaji%20Subhash%20Engineering%20College!5e0!3m2!1sen!2sin!4v1699559167827!5m2!1sen!2sin" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-[200px] h-[200px] lg:h-[280px] lg:w-[400px]' title="map"></iframe>
         </div>
       </div>
       <div className="credits lg:text-[12px] text-[9px] text-white flex flex-col justify-center items-center lg:mt-[70px] mt-[30px]">
         <p>Brought to you by</p>
-        <img src={logo2} loading="lazy" className='lg:h-[80px] h-[50px] lg:w-[90px] w-[50px]' />
+        <img src={logo2} alt="mesmerizer" loading="lazy" className='lg:h-[80px] h-[50px] lg:w-[90px] w-[50px]' />
         <p>© Mesmerizer 2024</p>
         <p>Proudly created by Tech Team of Eco Cultural Club, NSEC</p>
       </div>

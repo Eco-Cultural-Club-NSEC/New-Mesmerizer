@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import './Header.css'
-import logo from '../../assets/logo.png'
+import logo from "../../assets/logo.webp"
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import { Link } from 'react-router-dom';
-import bgImage from "../../assets/bg-1.webp";
-import ComingSoon from '../ComingSoon/ComingSoon';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +16,7 @@ const Header = () => {
         <>
             <div className="navbar flex justify-between items-center lg:h-[100px] h-[65px]">
                 <div className="backdrop-blur-sm bg-black/30 flex justify-between items-center lg:h-[100px] h-[65px] w-full">
-                    <Link to="/"><img className="lg:w-[80px] w-[47px] lg:ml-[30px] ml-[10px]" src={logo} alt="Logo of Mesmerizer" style={{ zIndex: "1" }} /></Link>
+                    <Link to="/"><img className="lg:w-[80px] w-[47px] lg:ml-[30px] ml-[10px] z-10" src={logo} loading="lazy" alt="Logo of Mesmerizer" /></Link>
                     <div className="nav-content lg:flex lg:mr-10">
                         <div className="navItems hidden lg:flex space-x-10 text-[20px]">
                             <ul>

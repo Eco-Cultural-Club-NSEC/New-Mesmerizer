@@ -30,7 +30,7 @@ const Events = () => {
             Timeline
           </h1>
        
-        <img className=" mt-4 lg:w-[606px] w-[330px] lg:h-[758px] " src={eventTimeline} alt="" />
+        <img className=" mt-4 lg:w-[606px] w-[330px] lg:h-[758px] " src={eventTimeline} alt="eventtimeline" />
       </div>
     </div>
   );

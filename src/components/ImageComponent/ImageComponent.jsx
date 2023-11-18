@@ -15,7 +15,7 @@ export default function ImageComponent({ source, styles, width, height }) {
 
   return (
     <>
-      <div style={{ display: imageLoaded ? 'none' : 'block' }}>
+      <div style={{ display: imageLoaded ? 'none' : 'block' }} className={styles}>
         <Blurhash
           hash="LKBf^R_N%NWC_3%gbwWBogofV@Ri"
           width={width}
