@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
+import Loading from './Loading';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,7 +20,7 @@ const appRouter = [
   },
   {
     path: "/events",
-    element: <ComingSoon />,
+    element: <ComingSoon/>,
   },
   {
     path: "/grab",
@@ -37,7 +38,7 @@ const appRouter = [
 
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loading/>}>
       <Router>
         <Routes>
           <Route path="/" element={<App />}>

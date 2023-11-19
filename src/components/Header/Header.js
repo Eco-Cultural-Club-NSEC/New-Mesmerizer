@@ -8,7 +8,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
-        console.log(isOpen);
+      
         setIsOpen(!isOpen);
     }
 
@@ -43,10 +43,10 @@ const Header = () => {
                         <ul className='text-center'>
                             <ul>
                                 <li className='text-white mb-4'>
-                                    <Link to="/events">Events</Link>
+                                    <Link to="/events" onClick={toggle}>Events</Link>
                                 </li>
                                 <li className='text-white'>
-                                    <Link to="/gallery">Gallery</Link>
+                                    <Link to="/gallery" onClick={toggle}>Gallery</Link>
                                 </li>
                             </ul>
                         </ul>

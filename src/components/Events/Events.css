@@ -1,3 +1,13 @@
+@font-face {
+  font-family: eSporta;
+  src: url("../../assets/Esporta.otf");
+}
+
+@font-face {
+  font-family: acidGrotesk;
+  src: url("../../assets/AcidGrotesk-Regular.otf");
+}
+
 .events {
   background-image: url("../../assets/events.png");
   background-color: black;
