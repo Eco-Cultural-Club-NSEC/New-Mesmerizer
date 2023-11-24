@@ -3,8 +3,6 @@ import './Header.css'
 import logo from '../../assets/logo.png'
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import { Link } from 'react-router-dom';
-import bgImage from "../../assets/bg-1.png";
-import ComingSoon from '../ComingSoon/ComingSoon';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
