@@ -9,21 +9,21 @@ const Footer = () => {
       <div className="logo lg:h[100px] h-[60px] lg:w-[300px] flex flex-col justify-center items-center lg:mt-[70px]">
         <img src={logo1} alt="" loading="lazy" className='lg:h-[130px] h-[60px] lg:w-[340px]' />
         <div className="socials lg:mt-[30px] mt-[6px]">
-          <a href="https://www.instagram.com/ecoculturalclub_nsec/" target='_blank'><i className="fa-brands fa-instagram text-[#FFFF00] lg:text-[40px] text-[20px] lg:mr-[50px] mr-[20px]"></i></a>
-          <a href="https://www.facebook.com/ecoculturalclubofnsec" target='_blank'><i className="fa-brands fa-facebook text-[#FFFF00] lg:text-[40px] text-[20px]"></i></a>
+          <a href="https://www.instagram.com/mesmerizer.nsec/" target='_blank'><i className="fa-brands fa-instagram text-[#FFFF00] lg:text-[40px] text-[20px] lg:mr-[50px] mr-[20px]"></i></a>
+          <a href="https://www.facebook.com/mesmerizer.nsec" target='_blank'><i className="fa-brands fa-facebook text-[#FFFF00] lg:text-[40px] text-[20px]"></i></a>
         </div>
       </div>
       <div className="content flex justify-center items-center text-white lg:mt-[100px] lg:flex-row flex-col">
         <div className="address flex flex-col items-center lg:mr-10 lg:text-[20px] text-[15px] lg:mt-0 mt-[40px]">
-          <h1>Netaji Subhash Engineering College</h1>
+          <h1> TIG | Netaji Subhash Engineering College, Kolkata</h1>
           <div className="add w-[100%] lg:mt-6 mt-3 flex flex-col items-center justify-center  lg:left-0 left-1 lg:text-[17px] text-[14px]">
-            <div className="line1 flex lg:w-[335px] w-[100%]">
+            <div className="line1 flex lg:w-[435px] w-[100%]">
               <i class="fa-solid fa-location-dot relative top-2 mr-3"></i>
               <p>Mauza Ranabhutia, Techno City, <br />Garia, West Bengal 700152</p>
             </div>
-            <div className="line2 flex lg:w-[341px] w-[100%] mt-1">
+            <div className="line2 flex lg:w-[435px] w-[100%] mt-1">
               <i class="fa-solid fa-phone relative top-2 mr-3"></i>
-              <p>Pratiti Ganguli [President] - <br /> +91 81000 36329 <br /> Sarthak Das [General Secretary] - <br /> +91 84209 24538 </p>
+              <p>Pratiti Ganguli [President] - +91 81000 36329 <br /> Sarthak Das [General Secretary] - +91 84209 24538 </p>
             </div>
           </div>
         </div>

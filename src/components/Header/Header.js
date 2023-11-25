@@ -29,7 +29,7 @@ const Header = () => {
                             </ul>
                         </div>
                         <Link to="/grab">
-                            <button className='bg-cyan-400 font-semibold lg:px-6 px-2 py-1 rounded-lg relative lg:left-0 left-[32px] bottom-[4px] lg:text-[18px] text-[14px]' style={{ boxShadow: "3px 3px yellow" }}>Grab your passes</button>
+                            <button className='bg-cyan-400 font-semibold lg:px-6 px-3 lg:py-2 py-2 rounded-lg relative lg:left-0 left-[32px] lg:bottom-[7px] bottom-[3px] lg:text-[18px] text-[14px]' style={{ boxShadow: "3px 3px yellow" }}>Grab Your Passes</button>
                         </Link>
                     </div>
                     <div className="lg:hidden mr-4">

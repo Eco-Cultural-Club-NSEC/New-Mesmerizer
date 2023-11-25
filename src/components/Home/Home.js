@@ -46,26 +46,26 @@ const Home = () => {
   return (
     <>
       <div className="page1 h-[88vh] flex justify-center items-center flex-col">
-        <img src={heroLogo} alt="" className='lg:h-[700px] h-[300px] lg:w-[900px] w-[500px] relative lg:bottom-[120px] lg:top-[-40px] top-[10px]' />
-        <div className="statistics text-white lg:divide-x-4 flex lg:flex-row flex-col justify-center items-center relative lg:bottom-[120px] lg:top-[-130px] top-[10px]">
+        <img src={heroLogo} alt="" className='lg:h-[522px] h-[260px] lg:w-[880px] w-[340px] relative lg:bottom-[130px] lg:top-[-20px] top-[56px]' />
+        <div className="statistics text-white lg:divide-x-4 flex lg:flex-row flex-col justify-center items-center relative lg:bottom-[120px] lg:top-[-10px] top-[10px] lg:mt-0 mt-[100px]">
           <div className="flex lg:divide-x-4 divide-x-2 lg:justify-center justify-between">
             <div className='stats flex'>
-              <div className="numeroStats lg:text-[65px] text-[35px] lg:mr-2">7000+</div>
-              <div className="alphaStats lg:w-[100px] w-[42px] lg:text-[17px] text-[10px] relative lg:top-[31px] top-[15px] lg:ml-0 ml-2 lg:mr-0 mr-[15px]">Main Day Footfall</div>
+              <div className="numeroStats lg:text-[55px] text-[35px] lg:mr-2">7000+</div>
+              <div className="alphaStats lg:w-[100px] w-[42px] lg:text-[17px] text-[10px] relative lg:top-[21px] top-[15px] lg:ml-0 ml-2 lg:mr-0 mr-[15px]">Main Day Footfall</div>
             </div>
             <div className='stats flex'>
-              <div className="numeroStats lg:text-[65px] text-[35px] lg:ml-7 lg:mr-2 ml-[15px]">25+</div>
-              <div className="alphaStats lg:text-[17px] text-[10px] lg:w-[100px] w-[42px] relative lg:top-[31px] top-[15px] lg:ml-0 ml-2">Major Sponsors</div>
+              <div className="numeroStats lg:text-[55px] text-[35px] lg:ml-7 lg:mr-2 ml-[15px]">30+</div>
+              <div className="alphaStats lg:text-[17px] text-[10px] lg:w-[100px] w-[42px] relative lg:top-[21px] top-[15px] lg:ml-0 ml-2">Major Sponsors</div>
             </div>
           </div>
           <div className="flex lg:divide-x-4 divide-x-2 lg:mt-0 mt-4 lg:justify-center justify-between">
             <div className='stats flex'>
-              <div className="numeroStats lg:text-[65px] text-[35px] lg:ml-7 lg:mr-2">10+</div>
-              <div className="alphaStats lg:w-[100px] w-[40px] lg:text-[17px] text-[10px] relative lg:top-[31px] top-[15px] lg:ml-0 ml-2 lg:mr-0 mr-[15px]">Flagship events</div>
+              <div className="numeroStats lg:text-[55px] text-[35px] lg:ml-7 lg:mr-2">10+</div>
+              <div className="alphaStats lg:w-[100px] w-[40px] lg:text-[17px] text-[10px] relative lg:top-[21px] top-[15px] lg:ml-0 ml-2 lg:mr-0 mr-[15px]">Flagship events</div>
             </div>
             <div className='stats flex'>
-              <div className="numeroStats lg:text-[65px] text-[35px] lg:ml-7 lg:mr-2 ml-[15px]">250+</div>
-              <div className="alphaStats lg:w-[100px] w-[40px] lg:text-[17px] text-[10px] relative lg:top-[31px] top-[15px] lg:ml-0 ml-2">Event participants</div>
+              <div className="numeroStats lg:text-[55px] text-[35px] lg:ml-7 lg:mr-2 ml-[15px]">50+</div>
+              <div className="alphaStats lg:w-[100px] w-[40px] lg:text-[17px] text-[10px] relative lg:top-[21px] top-[15px] lg:ml-0 ml-2">Colleges Engaged</div>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ const Home = () => {
       </div>
       <div className="page4 lg:h-[100vh] h-[80vh] flex justify-center items-center flex-col">
         <div className="artistHeading">
-          <h1 className='lg:text-[50px] text-[30px] w-[325px] lg:mt-[0px] relative lg:bottom-[50px] bottom-[20px] text-center text-white leading-[3rem]' style={{ textShadow: "1px 4px #000, 1px 6px #FF00CC" }}>Previously featured artist</h1>
+          <h1 className='lg:text-[50px] text-[30px] w-[325px] lg:mt-[0px] relative lg:bottom-[50px] bottom-[20px] text-center text-white leading-[3rem]' style={{ textShadow: "1px 4px #000, 1px 6px #FF00CC" }}>Previously featured artists</h1>
         </div>
         {/* <Carousel className='mt-[70px] lg:w-[100px] w-[100%]' breakPoints={breakPoints} focusOnSelect={true} enableSwipe={true} enableAutoPlay autoPlaySpeed={3000} disableArrowsOnEnd={true} enableTilt={true} style={{ width: "90%" }}>
           <CarouselCards img={Chandrabindoo} name={"Chandrabindoo"} />
