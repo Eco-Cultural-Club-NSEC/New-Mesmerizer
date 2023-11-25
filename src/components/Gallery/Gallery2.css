@@ -1,12 +1,12 @@
 @media (min-width: 1440px) {
   .container {
-    zoom: 1.4;
+    zoom: 1.5;
   }
 }
 
 @media (min-width: 2560px) {
   .container {
-    zoom: 1.7;
+    zoom: 2.0;
   }
 }
 
@@ -16,8 +16,8 @@
   }
 }
 .swiper_container {
-  height: 30rem;
-  padding: 2rem 0;
+  height: 100%;
+  padding: 0rem;
   position: relative;
   width: 100%;
 }
@@ -59,9 +59,10 @@
 
 .swiper-slide img {
   width: 27rem;
-  height: 20rem;
-  border-radius: 2rem;
+  height: 19rem;
+  border-radius: 0.4rem;
   object-fit: cover;
+  margin: 0px 30px;
 }
 
 .swiper-slide-shadow-left,

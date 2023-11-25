@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <>
       <div className="page1 h-[88vh] flex justify-center items-center flex-col">
-        <img src={heroLogo} alt="" className='lg:h-[522px] h-[260px] lg:w-[880px] w-[340px] relative lg:bottom-[130px] lg:top-[-20px] top-[56px]' />
+        <img src={heroLogo} alt="" className='lg:h-[472px] h-[260px] lg:w-[780px] w-[340px] relative lg:bottom-[130px] lg:top-[-20px] top-[56px]' />
         <div className="statistics text-white lg:divide-x-4 flex lg:flex-row flex-col justify-center items-center relative lg:bottom-[120px] lg:top-[-10px] top-[10px] lg:mt-0 mt-[100px]">
           <div className="flex lg:divide-x-4 divide-x-2 lg:justify-center justify-between">
             <div className='stats flex'>

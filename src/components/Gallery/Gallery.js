@@ -77,7 +77,7 @@ const Gallery = () => {
         </ul>
       </div>
       <div className="marquee1 px-5">
-        <ul className="marquee__content1">
+        <ul className="marquee__content2">
           {img.img3.map((e) => {
             return (
               <li className="lg:px-3" key={e.id}>
