@@ -14,15 +14,7 @@ function ImageCard1({url}) {
   return (
     <div className="h-[200px] w-[200px] lg:h-[230px] lg:w-[300px] ">
 
-      // <ImageComponent
-      //   source={url}
-      //   styles="border border-white rounded-lg h-[130px] w-[200px] lg:h-[180px] lg:w-[300px]"
-      //   width={270}
-      //   height={180}
-      //   onClick={() => {
-      //     openModal(url);
-      //   }}
-      //   />
+   
        <img 
         src={url} 
         alt="pic"
