@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {Modal} from "react-responsive-modal";
+import './ImageCard2.css'
 
 function ImageCard2({url}) {
 
@@ -28,6 +29,9 @@ function ImageCard2({url}) {
           setOpen(false);
         }}
         center
+        classNames={{
+          modal:'customModal'
+        }}
       >
         <img src={imageUrl} alt="pic" />
       </Modal>
