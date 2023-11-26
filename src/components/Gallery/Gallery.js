@@ -20,7 +20,7 @@ import "./Gallery2.css";
 const Gallery = () => {
 
   return (
-    <div style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }}>
+    <div className="flex justify-center items-center flex-col" style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover", height:"125vh" }}>
       <h1 className="blue-main flex justify-center items-center p-6 lg:mb-[60px] text-purple-600 lg:text-[100px] text-[50px]">
         GALLERY
       </h1>

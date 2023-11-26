@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .container {
+    zoom: 0.8;
+  }
+}
+
 @media (min-width: 1440px) {
   .container {
     zoom: 1.5;
@@ -28,16 +34,16 @@
   position: relative;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 376px) {
   .swiper_container {
-    height: 25rem;
+    height: 22rem;
   }
   .swiper-slide {
     width: fit-content !important;
     height: 16rem !important;
   }
   .swiper-slide img {
-    width: 20rem !important;
+    width: 15rem !important;
     height: 18rem !important;
   }
 }
