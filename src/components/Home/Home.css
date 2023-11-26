@@ -120,7 +120,7 @@
 
 @keyframes scrolling {
   0% {
-    transform: translateX(120vw);
+    transform: translateX(110vw);
   }
 
   100% {

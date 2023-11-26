@@ -47,25 +47,25 @@ const Home = () => {
     <>
       <div className="page1 h-[88vh] flex justify-center items-center flex-col">
         <img src={heroLogo} alt="" className='lg:h-[472px] h-[260px] lg:w-[780px] w-[340px] relative lg:bottom-[130px] lg:top-[-20px] top-[56px]' />
-        <div className="statistics text-white lg:divide-x-4 flex lg:flex-row flex-col justify-center items-center relative lg:bottom-[120px] lg:top-[-10px] top-[10px] lg:mt-0 mt-[100px]">
+        <div className="statistics text-white lg:divide-x-4 flex lg:flex-row flex-col justify-center items-center relative lg:bottom-[120px] lg:top-[-2px] top-[10px] lg:mt-0 mt-[100px]">
           <div className="flex lg:divide-x-4 divide-x-2 lg:justify-center justify-between">
             <div className='stats flex'>
-              <div className="numeroStats lg:text-[55px] text-[35px] lg:mr-2">7000+</div>
-              <div className="alphaStats lg:w-[100px] w-[42px] lg:text-[17px] text-[10px] relative lg:top-[21px] top-[15px] lg:ml-0 ml-2 lg:mr-0 mr-[15px]">Main Day Footfall</div>
+              <div className="numeroStats lg:text-[48px] text-[35px] lg:mr-2">7000+</div>
+              <div className="alphaStats lg:w-[100px] w-[42px] lg:text-[15px] text-[10px] relative lg:top-[20px] top-[15px] lg:ml-0 ml-2 lg:mr-0 mr-[15px]">Main Day Footfall</div>
             </div>
             <div className='stats flex'>
-              <div className="numeroStats lg:text-[55px] text-[35px] lg:ml-7 lg:mr-2 ml-[15px]">30+</div>
-              <div className="alphaStats lg:text-[17px] text-[10px] lg:w-[100px] w-[42px] relative lg:top-[21px] top-[15px] lg:ml-0 ml-2">Major Sponsors</div>
+              <div className="numeroStats lg:text-[48px] text-[35px] lg:ml-7 lg:mr-2 ml-[15px]">30+</div>
+              <div className="alphaStats lg:text-[15px] text-[10px] lg:w-[100px] w-[42px] relative lg:top-[20px] top-[15px] lg:ml-0 ml-2">Major Sponsors</div>
             </div>
           </div>
           <div className="flex lg:divide-x-4 divide-x-2 lg:mt-0 mt-4 lg:justify-center justify-between">
             <div className='stats flex'>
-              <div className="numeroStats lg:text-[55px] text-[35px] lg:ml-7 lg:mr-2">10+</div>
-              <div className="alphaStats lg:w-[100px] w-[40px] lg:text-[17px] text-[10px] relative lg:top-[21px] top-[15px] lg:ml-0 ml-2 lg:mr-0 mr-[15px]">Flagship events</div>
+              <div className="numeroStats lg:text-[48px] text-[35px] lg:ml-7 lg:mr-2">10+</div>
+              <div className="alphaStats lg:w-[100px] w-[40px] lg:text-[15px] text-[10px] relative lg:top-[20px] top-[15px] lg:ml-0 ml-2 lg:mr-0 mr-[15px]">Flagship events</div>
             </div>
             <div className='stats flex'>
-              <div className="numeroStats lg:text-[55px] text-[35px] lg:ml-7 lg:mr-2 ml-[15px]">50+</div>
-              <div className="alphaStats lg:w-[100px] w-[40px] lg:text-[17px] text-[10px] relative lg:top-[21px] top-[15px] lg:ml-0 ml-2">Colleges Engaged</div>
+              <div className="numeroStats lg:text-[48px] text-[35px] lg:ml-7 lg:mr-2 ml-[15px]">50+</div>
+              <div className="alphaStats lg:w-[100px] w-[40px] lg:text-[15px] text-[10px] relative lg:top-[20px] top-[15px] lg:ml-0 ml-2">Colleges Engaged</div>
             </div>
           </div>
         </div>
