@@ -18,7 +18,7 @@ function ImageCard1({url}) {
        <img 
         src={url} 
         alt="pic"
-       loading="lazy" *
+       loading="lazy" 
        className="border border-white h-[130px] w-[200px] lg:h-[180px] lg:w-[300px]" 
         onClick={() => { 
           openModal(url); 
