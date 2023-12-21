@@ -62,14 +62,14 @@ const Gallery = () => {
         <ul className="marquee__content1">
           {img.img2.map((e) => {
             return (
-              <li className="lg:px-3" key={e.id}>
+              <li className="lg:px-3 px-3" key={e.id}>
                 <ImageCard1 url={e.url} />
               </li>
             );
           })}
           {img.img2.map((e) => {
             return (
-              <li className="lg:px-3" key={e.id}>
+              <li className="lg:px-3 px-3" key={e.id}>
                 <ImageCard1 url={e.url} />
               </li>
             );
@@ -80,14 +80,14 @@ const Gallery = () => {
         <ul className="marquee__content2">
           {img.img3.map((e) => {
             return (
-              <li className="lg:px-3" key={e.id}>
+              <li className="lg:px-3 px-3" key={e.id}>
                 <ImageCard1 url={e.url} />
               </li>
             );
           })}
           {img.img3.map((e) => {
             return (
-              <li className="lg:px-3" key={e.id}>
+              <li className="lg:px-3 px-3" key={e.id}>
                 <ImageCard1 url={e.url} />
               </li>
             );

@@ -12,6 +12,7 @@ const Events = lazy(() => import("./components/Events/Events"))
 const Gallery = lazy(() => import("./components/Gallery/Gallery"))
 const ComingSoon = lazy(() => import("./components/ComingSoon/ComingSoon"))
 const E1 = lazy(() => import("./components/Events/E1"))
+const EventReg= lazy(()=> import("./components/EventReg/EventReg"))
 
 const appRouter = [
   {
@@ -20,7 +21,7 @@ const appRouter = [
   },
   {
     path: "/events",
-    element: <ComingSoon/>,
+    element: <ComingSoon />,
   },
   {
     path: "/grab",
@@ -33,6 +34,10 @@ const appRouter = [
   {
     path: "/events/1",
     element: <E1 />
+  },
+  {
+    path: "/events/eventsReg",
+    element: <EventReg />
   }
 ]
 
