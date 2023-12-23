@@ -48,7 +48,6 @@ root.render(
         <Routes>
           <Route path="/" element={<App />}>
             {appRouter.map((item) => {
-              console.log(item)
               return (
                 <Route path={item.path} element={item.element} />
               )

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { singleRegistration } from "../../../utils/regFunctions";
 
 const Registration = () => {
   const [inputList, setinputList] = useState([{ Name: "" }]);
-  const [collegeName, setCollegeName] = useState([{ Name: "" }]);
-  const [waNumber, setwaNumber] = useState([{ Name: "" }]);
-  const [altNumber, setAltNumber] = useState([{ Name: "" }]);
-  const [emailID, setEmailID] = useState([{ Name: "" }]);
+  const [collegeName, setCollegeName] = useState("");
+  const [waNumber, setwaNumber] = useState("");
+  const [altNumber, setAltNumber] = useState("");
+  const [emailID, setEmailID] = useState("");
+  const [ss, setSS] = useState();
 
   const handleName = (e, index) => {
     const value = e.target;
@@ -14,32 +16,25 @@ const Registration = () => {
     setinputList(list1);
   };
 
-  const handleCollegeName = (e, index) => {
-    const value = e.target;
-    const list2 = [...collegeName];
-    list2[index] = value;
-    setCollegeName(list2);
+  const handleCollegeName = (e) => {
+    setCollegeName(e.target.value);
   };
 
-  const handleWANumber = (e, index) => {
-    const value = e.target;
-    const list3 = [...waNumber];
-    list3[index] = value;
-    setwaNumber(list3);
+  const handleWANumber = (e) => {
+    setwaNumber(e.target.value);
   };
 
-  const handleAltNumber = (e, index) => {
-    const value = e.target;
-    const list4 = [...altNumber];
-    list4[index] = value;
-    setAltNumber(list4);
+  const handleAltNumber = (e) => {
+    setAltNumber(e.target.value);
   };
 
-  const handleEmail = (e, index) => {
-    const value = e.target;
-    const list5 = [...emailID];
-    list5[index] = value;
-    setEmailID(list5);
+  const handleEmail = (e) => {
+    setEmailID(e.target.value);
+  };
+
+  // function to handle input of payment screen shot
+  const handleSS = (e) => {
+    setSS(e.target.files[0]);
   };
 
   const handleRemove = (index) => {
@@ -50,6 +45,46 @@ const Registration = () => {
 
   const handleAddClick = () => {
     setinputList([...inputList, { Name: "" }]);
+  };
+
+  /*
+  data format
+    let info = {
+      Name: "Kunal Ghosh",
+      Event: "testEvent",
+      Alt_Number: "123456789",
+      Whatsapp_Number: "123456789",
+      Email: "test@test.com",
+      College_Name: "abc college",
+      Payment_id: "1234567",
+      payment_verified: false,
+      entry:false
+    };
+
+    file should be in the format of jpeg,jpg,png
+
+    example function call
+    singleRegistration(info,file);
+
+*/
+
+  // example submit
+  let info = {
+    Name: "Kunal Ghosh",
+    Event: "testEvent",
+    Alt_Number: "123456789",
+    Whatsapp_Number: "123456789",
+    Email: "test@test.com",
+    College_Name: "abc college",
+    Payment_id: "1234567",
+    payment_verified: false,
+    entry: false,
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = await singleRegistration(info, ss);
+    console.log(data);
   };
 
   return (
@@ -77,20 +112,50 @@ const Registration = () => {
       </label>
       <label className="flex items-start flex-col">
         College Name:
-        <input type="text" className="text-black" name="collegeName" onChange={(e) => handleCollegeName(e)} />
+        <input
+          type="text"
+          className="text-black"
+          name="collegeName"
+          onChange={handleCollegeName}
+        />
       </label>
       <label className="flex items-start flex-col">
         WhatsApp number:
-        <input type="text" className="text-black"  name="WANumber" onChange={(e) => handleWANumber(e)} />
+        <input
+          type="text"
+          className="text-black"
+          name="WANumber"
+          onChange={handleWANumber}
+        />
       </label>
       <label className="flex items-start flex-col">
         Alternate contact number:
-        <input type="text" className="text-black" name="altNumber" onChange={(e) => handleAltNumber(e)} />
+        <input
+          type="text"
+          className="text-black"
+          name="altNumber"
+          onChange={handleAltNumber}
+        />
       </label>
       <label className="flex items-start flex-col">
         Email address:
-        <input type="text" className="text-black" name="email" onChange={(e) => handleEmail(e)} />
+        <input
+          type="text"
+          className="text-black"
+          name="email"
+          onChange={handleEmail}
+        />
       </label>
+      <label className="flex items-start flex-col">
+        Upload Image:
+        <input
+          type="file"
+          className="text-black"
+          name="email"
+          onChange={handleSS}
+        />
+      </label>
+      <button onClick={handleSubmit}>Click me</button>
     </form>
   );
 };
