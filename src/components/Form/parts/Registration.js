@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./common.css";
 
 const Registration = () => {
   const [inputList, setinputList] = useState([{ Name: "" }]);
@@ -6,91 +7,115 @@ const Registration = () => {
   const [waNumber, setwaNumber] = useState([{ Name: "" }]);
   const [altNumber, setAltNumber] = useState([{ Name: "" }]);
   const [emailID, setEmailID] = useState([{ Name: "" }]);
+  const [selectedValue, setSelectedValue] = useState("");
+  const options = ["Option 1", "Option 2", "Option 3", "Option 4"];
 
-  const handleName = (e, index) => {
+  const handleEvent = (e) => {
+    setSelectedValue(e.target.value);
+  };
+
+  const handleName = (e) => {
     const value = e.target;
-    const list1 = [...inputList];
-    list1[index] = value;
-    setinputList(list1);
+    setinputList(value);
   };
 
-  const handleCollegeName = (e, index) => {
+  const handleCollegeName = (e) => {
     const value = e.target;
-    const list2 = [...collegeName];
-    list2[index] = value;
-    setCollegeName(list2);
+    setCollegeName(value);
   };
 
-  const handleWANumber = (e, index) => {
+  const handleWANumber = (e) => {
     const value = e.target;
-    const list3 = [...waNumber];
-    list3[index] = value;
-    setwaNumber(list3);
+    setwaNumber(value);
   };
 
-  const handleAltNumber = (e, index) => {
+  const handleAltNumber = (e) => {
     const value = e.target;
-    const list4 = [...altNumber];
-    list4[index] = value;
-    setAltNumber(list4);
+    setAltNumber(value);
   };
 
-  const handleEmail = (e, index) => {
+  const handleEmail = (e) => {
     const value = e.target;
-    const list5 = [...emailID];
-    list5[index] = value;
-    setEmailID(list5);
-  };
-
-  const handleRemove = (index) => {
-    const list = [...inputList];
-    list.splice(index, 1);
-    setinputList(list);
-  };
-
-  const handleAddClick = () => {
-    setinputList([...inputList, { Name: "" }]);
+    setEmailID(value);
   };
 
   return (
     <form className="text-white flex justify-center items-center flex-col">
-      <label className="flex items-start flex-col">
-        Name:
-        {inputList.map((x, i) => {
-          return (
-            <div className="flex">
-              <input
-                type="text"
-                className="text-black"
-                name="name"
-                onChange={(e) => handleName(e, i)}
-              />
-              {inputList.length !== 1 && (
-                <button onClick={handleRemove}>-</button>
-              )}
-              {inputList.length - 1 === i && (
-                <button onClick={handleAddClick}>+</button>
-              )}
-            </div>
-          );
-        })}
+      <label className="flex items-start flex-col mb-5 text-[18px]">
+        Event
+        <div className="flex">
+          <select
+            id="dropdown"
+            value={selectedValue}
+            onChange={handleEvent}
+            className="text-white text-[15px] w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+          >
+            <option value="">Select...</option>
+            {options.map((option, index) => (
+              <option key={index} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+        </div>
       </label>
-      <label className="flex items-start flex-col">
-        College Name:
-        <input type="text" className="text-black" name="collegeName" onChange={(e) => handleCollegeName(e)} />
+      <label className="flex items-start flex-col mb-5 text-[18px]">
+        Name
+        <div className="flex">
+          <input
+            type="text"
+            className="text-black w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+            placeholder="Enter your name"
+            name="name"
+            onChange={(e) => handleName(e)}
+          />
+        </div>
       </label>
-      <label className="flex items-start flex-col">
-        WhatsApp number:
-        <input type="text" className="text-black"  name="WANumber" onChange={(e) => handleWANumber(e)} />
+      <label className="flex items-start flex-col mb-5 text-[18px]">
+        College Name
+        <input
+          type="text"
+          className="text-black w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+          placeholder="Enter your college name"
+          name="collegeName"
+          onChange={(e) => handleCollegeName(e)}
+        />
       </label>
-      <label className="flex items-start flex-col">
-        Alternate contact number:
-        <input type="text" className="text-black" name="altNumber" onChange={(e) => handleAltNumber(e)} />
+      <label className="flex items-start flex-col mb-5 text-[18px]">
+        WhatsApp number
+        <input
+          type="text"
+          className="text-black w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+          placeholder="Enter your WhatsApp number"
+          name="WANumber"
+          onChange={(e) => handleWANumber(e)}
+        />
       </label>
-      <label className="flex items-start flex-col">
-        Email address:
-        <input type="text" className="text-black" name="email" onChange={(e) => handleEmail(e)} />
+      <label className="flex items-start flex-col mb-5 text-[18px]">
+        Alternate contact number
+        <input
+          type="text"
+          className="text-black w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+          placeholder="Enter your alternate number"
+          name="altNumber"
+          onChange={(e) => handleAltNumber(e)}
+        />
       </label>
+      <label className="flex items-start flex-col mb-5 text-[18px]">
+        Email address
+        <input
+          type="text"
+          className="text-black w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+          placeholder="Enter your email address"
+          name="email"
+          onChange={(e) => handleEmail(e)}
+        />
+      </label>
+      <div className="flex items-start flex-col">
+        <li>Participant must be a present college student.</li>
+        <li>Registration fee : Rs. 50/- .</li>
+        <li>The amount is non-refundable.</li>
+      </div>
     </form>
   );
 };
