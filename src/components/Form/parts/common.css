@@ -3,7 +3,7 @@
     src: url("../../../assets/AcidGrotesk-Regular.otf");
   }
 
-  label, li{
+  p, label, li{
     font-family: acidGrotesk;
   }
 

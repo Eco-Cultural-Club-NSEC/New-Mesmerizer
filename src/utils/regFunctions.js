@@ -53,7 +53,7 @@ export const singleRegistration = async (data,file) => {
 export const multiRegistration = async (data,file)=>{
   const ssUrl = await imageUploader("multiReg",file);
   const updatedInfo = { ...data, paymentUrl: ssUrl };
-  const docRef = await addDoc(collection(db, "singleReg"), updatedInfo);
+  const docRef = await addDoc(collection(db, "multiReg"), updatedInfo);
   return docRef;
 }
 

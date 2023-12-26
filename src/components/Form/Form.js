@@ -7,11 +7,12 @@ import './Form.css'
 const Form = () => {
   const [page, setPage] = useState(0);
   const buttonTitles = ["Confirm and Pay", "Confirm", "Back"];
+
   const pageDisplay = () => {
     if (page === 0) {
       return <Registration />;
     } else if (page === 1) {
-      return <Registration />;
+      return <Payment/>;
     } else if (page === 3) {
       return <Registration />;
     }

@@ -1,7 +1,8 @@
 import React from 'react'
 import demoImage from "../../assets/demo-event-image.png";
 import "./EventReg.css";
-import Form from "../../components/Form/Form"
+import Registration from '../Form/parts/Registration';
+import MultiRegs from '../Form/parts/MultiRegs';
 
 const EventReg = () => {
   return (
@@ -14,7 +15,8 @@ const EventReg = () => {
         />
       </div>
       <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">Western Mistique</h1>
-      <Form/>
+      <Registration/>
+      <MultiRegs/>
     </div>
   )
 }
