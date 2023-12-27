@@ -14,6 +14,7 @@ const Registration = () => {
   const [emailID, setEmailID] = useState("");
   const [ss, setSS] = useState();
   const [selectedValue, setSelectedValue] = useState("");
+  const [payID, setPayID] = useState("");
   const options = [
     "Sorcerous Solo (₹70)",
     "Western Mystique (₹70)",
@@ -49,6 +50,10 @@ const Registration = () => {
     setEmailID(e.target.value);
   };
 
+  const handlePaymentID = (e) => {
+    setPayID(e.target.value);
+  };
+
   let userInfo = {
     Name: inputList,
     Event: selectedValue,
@@ -56,7 +61,7 @@ const Registration = () => {
     Whatsapp_Number: waNumber,
     Email: emailID,
     College_Name: collegeName,
-    Payment_id: "1234567",
+    Payment_id: payID,
     payment_verified: false,
     entry: false,
   };
@@ -73,6 +78,7 @@ const Registration = () => {
       validation(userInfo.Payment_id) &&
       validation(userInfo.Email) &&
       validation(userInfo.Whatsapp_Number) &&
+      validation(userInfo.Payment_id) &&
       ss
     ) {
       const data = await singleRegistration(userInfo, ss);
@@ -231,7 +237,7 @@ const Registration = () => {
                 required
               />
             </label>
-            <label className="flex items-center justify-center flex-col mb-5 lg:w-full w-[80%]">
+            <label className="flex items-center justify-center mb-5 flex-col lg:w-full w-[80%]">
               Upload Payment Screenshot (only in .jpeg, .jpg and .png):
               <input
                 type="file"
@@ -239,6 +245,17 @@ const Registration = () => {
                 name="email"
                 onChange={handleSS}
                 accept=".jpeg, .jpg, .png"
+              />
+            </label>
+            <label className="flex items-start flex-col mb-5 text-[18px]">
+              URL Payment ID
+              <input
+                type="text"
+                className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+                placeholder="Enter your payment ID"
+                name="payment ID"
+                onChange={(e) => handlePaymentID(e)}
+                required
               />
             </label>
             <button
