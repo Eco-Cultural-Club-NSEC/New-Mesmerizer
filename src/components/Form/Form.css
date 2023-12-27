@@ -1,0 +1,23 @@
+@font-face {
+    font-family: acidGrotesk;
+    src: url("../../assets/AcidGrotesk-Regular.otf");
+  }
+
+
+.progressBar {
+    width: 400px;
+    height: 5px;
+    background-color: white;
+    margin-bottom: 50px;
+    border-radius: 25px;
+  }
+  
+  .progressBar div {
+    width: 33.3%;
+    height: 100%;
+    background-color: rgb(98, 0, 255);
+  }
+
+  .title{
+    font-family: acidGrotesk;
+  }

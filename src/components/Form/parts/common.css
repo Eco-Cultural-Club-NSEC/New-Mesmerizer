@@ -1,0 +1,20 @@
+@font-face {
+    font-family: acidGrotesk;
+    src: url("../../../assets/AcidGrotesk-Regular.otf");
+  }
+
+  p, label, li, button{
+    font-family: acidGrotesk;
+  }
+
+  label input::placeholder{
+    font-size: 15px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+
+
+  form{
+    background: none;
+    position: relative;
+  }

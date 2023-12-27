@@ -1,0 +1,21 @@
+@font-face {
+  font-family: eSporta;
+  src: url("../../assets/Esporta.otf");
+}
+
+.events {
+    background-image: url("../../assets/events.png");
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .purple-main{
+    font-family: eSporta;
+    text-shadow: 
+    2px 5px black,
+    3px 7px #00CCFF;
+    color:#FF00CC;
+  }
