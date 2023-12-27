@@ -8,17 +8,20 @@ const E1 = () => {
   }, []);
 
   return (
-    <div className="individual-event flex flex-col justify-center items-center lg:h-[165vh] h-[140vh]">
-      <div className="flex justify-center items-center">
-        <img
+    <div className="individual-event flex flex-col justify-center items-center lg:h-[220vh] h-[200vh]">
+      <div className="flex justify-center items-center creative-writing lg:h-[500px] lg:w-[1000px] h-[200px] w-[320px]">
+        {/* <img
           className=" lg:w-[1112px] lg:h-[392px] w-[250px] h-[110px] mt-4"
           src={demoImage}
           alt="demoimage"
-        />
+        /> */}
       </div>
+      <div className="flex flex-col justify-center items-center">
       <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
-        Western Mistique
+       Spellbound Sagas
       </h1>
+      <h2 className="align middle lg:text-[30px] text-[20px] text-white">Creative Writing</h2>
+      </div>
       <div className=" flex flex-col lg:flex placeholder:mt-4 lg:w-full w-80">
         <div className="flex flex-col lg:flex-row  justify-between">
           <div className=" px-3 flex flex-col lg:ml-[70px] ml-[10px]">
@@ -26,17 +29,37 @@ const E1 = () => {
               Event Guidelines
             </span>
             <ol className="mt-2 lg:text-[30px] text-[15px]">
-              <li>1.This is a western solo dance competition</li>
-              <li>2.This is an on stage competition</li>
+              <li>
+                1. <b>Time Limit :</b> 1 hour
+              </li>
+              <li>
+                2. <b>Language :</b> English only
+              </li>
+              <li>
+                3. <b>Forms Allowed :</b> Prose (Max 100 words) and Poetry (Max
+                200 words)
+              </li>
+              <li>
+                4. <b>Materials Provided :</b> Pen and paper will be provided
+              </li>
+              <li>
+                {" "}
+                5. <b>No Electronic Devices :</b> Participants are prohibited
+                from using any electronic devices
+              </li>
+              <li>
+                6. <b>Original Content :</b> All submissions must be original,
+                any form of illegal action will result in disqualification
+              </li>
             </ol>
           </div>
-          <div className="px-3 flex flex-col ml-[10px] lg:mr-[140px]">
+          <div className="px-3 flex flex-col ml-[10px] lg:mr-[140px] lg:w-[780px]">
             <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
               Coordinators
             </span>
             <ol className="mt-1 lg:text-[30px] text-[15px]">
-              <li>Sinjan Mitra - +91 123456789</li>
-              <li>Utsa Puryakasta - +91 123456789</li>
+              <li>Jayasree Bhattacharya - +91 74397 19574</li>
+              <li>Nabojita Ghosh - +91 83718 17359</li>
             </ol>
           </div>
         </div>
@@ -48,15 +71,15 @@ const E1 = () => {
               <li>
                 <div className="flex space-x-4">
                   <div className="flex-none font-bold">Date:</div>
-                  <div className="flex-none">17th January,2024</div>
+                  <div className="flex-none">14th January, 2024</div>
                 </div>
               </li>
-              <li>
-              <div className="flex space-x-4">
+              {/* <li>
+                <div className="flex space-x-4">
                   <div className="flex-none font-bold">Time:</div>
                   <div className="flex-none">10:00 AM</div>
                 </div>
-              </li>
+              </li> */}
               <li>
                 <div className="flex space-x-4">
                   <div className="flex-none font-bold">Venue:</div>
@@ -69,8 +92,11 @@ const E1 = () => {
             <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3">
               Deadline
             </span>
-            <p style={{color:'red'}} className="font-bold lg:text-[40px] text-[20px]">
-              27th March 2023
+            <p
+              style={{ color: "red" }}
+              className="font-bold lg:text-[40px] text-[20px]"
+            >
+              10th January, 2024
             </p>
             <div className="flex flex-col items-start">
               <span className="lg:text-[63px] text-[20px] mt-3">Jury</span>
@@ -82,8 +108,8 @@ const E1 = () => {
                     alt=""
                   />
                   <div className="lg:w-[134px] w-[54px]">
-                  <p className="whitespace-normal lg: mt-[4px] lg:text-[24px] text-white text-center">
-                      Abhinil Nath
+                    <p className="whitespace-normal lg: mt-[4px] lg:text-[24px] text-white text-center">
+                      N/A
                     </p>
                   </div>
                 </div>
@@ -95,7 +121,7 @@ const E1 = () => {
                   />
                   <div className="lg:w-[134px] w-[54px] ">
                     <p className="whitespace-normal lg: mt-[4px] lg:text-[24px] text-white text-center">
-                      Rajit Dutta
+                      N/A
                     </p>
                   </div>
                 </div>
@@ -109,12 +135,16 @@ const E1 = () => {
       </div>
 
       <div className="flex flex-col  lg:mr-[600px] lg:mt-[30px] mt-[35px] lg:px-0 px-5">
-        <span style={{color:'red'}} className="lg:text-4xl text-1xl ">PARTICIPANTS MUST REACH 30 MINUTES PRIOR TO THE EVENT</span>
+        <span style={{ color: "red" }} className="lg:text-4xl text-1xl ">
+          PARTICIPANTS MUST REACH 30 MINUTES PRIOR TO THE EVENT
+        </span>
         <div className="flex text-white space-x-2 mt-4 lg:px-0 px-2 lg:text-2xl text-sm">
           <p>&bull;</p>
-          <p>All participants must bring their ticket to get the entry to the event.</p>
+          <p>
+            All participants must bring their ticket to get the entry to the
+            event.
+          </p>
         </div>
-        
       </div>
     </div>
   );

@@ -16,6 +16,42 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.debate{
+  background-image: url("https://i.ibb.co/KjcrWV4/debate.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
+.quiz{
+  background-image: url("https://i.ibb.co/1zmDwHr/quiz.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
+.art-exhibition{
+  background-image: url("https://i.ibb.co/9t2CGXw/Art-1.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
+
+.creative-writing{
+  background-image: url("https://i.ibb.co/5W76BrK/creative-writing.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
+.short-film{
+  background-image: url("https://i.ibb.co/XXWgRC3/short-film.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
 
 .events h1 {
   font-family: eSporta;
@@ -38,6 +74,10 @@
   2px 5px black,
   3px 7px #FF00CC;
   color: #00CCFF;
+}
+
+li{
+  padding-bottom: 10px;
 }
 
 .individual-event {
