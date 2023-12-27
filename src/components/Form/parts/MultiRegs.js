@@ -73,12 +73,21 @@ const Registration = () => {
       multiValid(userInfo.Name) &&
       validation(userInfo.College_Name) &&
       validation(userInfo.Payment_id) &&
+      validation(userInfo.Alt_Number) &&
       validation(userInfo.Email) &&
       validation(userInfo.Whatsapp_Number) &&
       validation(userInfo.Payment_id) &&
       ss
     ) {
       const data = await multiRegistration(userInfo, ss);
+      setAltNumber("");
+      setCollegeName("");
+      setwaNumber("");
+      setEmailID("");
+      setSS("");
+      setPayID("");
+      setinputList([""]);
+      setSelectedValue("");
       toast("We will reach out to you soon!!", { icon: "🚀" });
       return;
     }
@@ -181,6 +190,7 @@ const Registration = () => {
                         className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
                         placeholder="Participant Name"
                         name="name"
+                        value={inputList[i]}
                         onChange={(e) => handleName(e, i)}
                       />
                       {inputList.length !== 1 && (
@@ -207,6 +217,7 @@ const Registration = () => {
                   className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
                   placeholder="Enter your college name"
                   name="collegeName"
+                  value={collegeName}
                   onChange={(e) => handleCollegeName(e)}
                 />
               </label>
@@ -217,6 +228,7 @@ const Registration = () => {
                   className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
                   placeholder="Enter your WhatsApp number"
                   name="WANumber"
+                  value={waNumber}
                   onChange={(e) => handleWANumber(e)}
                 />
               </label>
@@ -227,6 +239,7 @@ const Registration = () => {
                   className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
                   placeholder="Enter your alternate number"
                   name="altNumber"
+                  value={altNumber}
                   onChange={(e) => handleAltNumber(e)}
                 />
               </label>
@@ -237,6 +250,7 @@ const Registration = () => {
                   className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
                   placeholder="Enter your email address"
                   name="email"
+                  value={emailID}
                   onChange={(e) => handleEmail(e)}
                 />
               </label>
@@ -257,6 +271,7 @@ const Registration = () => {
                 className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
                 placeholder="Enter your payment ID"
                 name="payment ID"
+                value={payID}
                 onChange={(e) => handlePaymentID(e)}
                 required
               />
