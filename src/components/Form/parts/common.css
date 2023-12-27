@@ -18,3 +18,12 @@
     background: none;
     position: relative;
   }
+
+  .events {
+    background-image: url("../../../assets/events.png");
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

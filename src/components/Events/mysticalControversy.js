@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
 import "./Events.css";
 // import demoImage from "../../assets/demo-event-image.png";
+import { useNavigate } from "react-router-dom";
 
 const E1 = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const navigate = useNavigate();
 
   return (
     <div className="individual-event flex flex-col justify-center items-center lg:h-[220vh] h-[230vh]">
-      <div className="flex justify-center items-center debate lg:h-[500px] lg:w-[800px] h-[200px] w-[300px]" >
+      <div className="flex justify-center items-center debate lg:h-[500px] lg:w-[800px] h-[200px] w-[300px]">
         {/* <img
           className=" lg:w-[1112px] lg:h-[392px] w-[250px] h-[110px] mt-4"
           src="https://i.ibb.co/KjcrWV4/debate.jpg"
@@ -18,10 +20,12 @@ const E1 = () => {
         /> */}
       </div>
       <div className="flex flex-col justify-center items-center">
-      <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
-        Mystical Controversy
-      </h1>
-      <h2 className="align middle lg:text-[30px] text-[20px] text-white">Debate</h2>
+        <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
+          Mystical Controversy
+        </h1>
+        <h2 className="align middle lg:text-[30px] text-[20px] text-white">
+          Debate
+        </h2>
       </div>
       <div className=" flex flex-col lg:flex placeholder:mt-4 lg:w-full w-80">
         <div className="flex flex-col lg:flex-row  justify-between">
@@ -118,7 +122,7 @@ const E1 = () => {
                   />
                   <div className="lg:w-[134px] w-[54px]">
                     <p className="whitespace-normal lg: mt-[4px] lg:text-[24px] text-white text-center">
-                     N/A
+                      N/A
                     </p>
                   </div>
                 </div>
@@ -136,7 +140,12 @@ const E1 = () => {
                 </div>
               </div>
             </div>
-            <button className="ind-event-btn lg:text-[37px] text-[20px] lg:w-[360px] w-[150px] lg:h-[60px] lg:mt-10 mt-3 text-black font-bold">
+            <button
+              className="ind-event-btn lg:text-[37px] text-[20px] lg:w-[360px] w-[150px] lg:h-[60px] lg:mt-10 mt-3 text-black font-bold"
+              onClick={() => {
+                navigate(`/events/eventsRegMulti`);
+              }}
+            >
               Register Now
             </button>
           </div>

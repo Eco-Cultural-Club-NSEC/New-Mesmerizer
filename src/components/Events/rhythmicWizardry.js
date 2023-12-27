@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import "./Events.css";
 import demoImage from "../../assets/demo-event-image.png";
+import { useNavigate } from "react-router-dom";
 
 const E1 = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const navigate = useNavigate();
 
   return (
     <div className="individual-event flex flex-col justify-center items-center lg:h-[200vh] h-[200vh]">
@@ -15,15 +17,16 @@ const E1 = () => {
           src={demoImage}
           alt="demoimage"
         />
-        
       </div>
       <div className="flex flex-col justify-center items-center">
-      <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
-        Rhythmic Wizardry
-      </h1>
-      <h2 className="align middle lg:text-[30px] text-[20px] text-white">Beat Boxing Battle</h2>
+        <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
+          Rhythmic Wizardry
+        </h1>
+        <h2 className="align middle lg:text-[30px] text-[20px] text-white">
+          Beat Boxing Battle
+        </h2>
       </div>
-     
+
       <div className=" flex flex-col lg:flex placeholder:mt-4 lg:w-full w-80">
         <div className="flex flex-col lg:flex-row  justify-between">
           <div className=" px-3 flex flex-col lg:ml-[70px] ml-[10px]">
@@ -118,13 +121,18 @@ const E1 = () => {
                   />
                   <div className="lg:w-[134px] w-[54px] ">
                     <p className="whitespace-normal lg: mt-[4px] lg:text-[24px] text-white text-center">
-                        N/A
+                      N/A
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <button className="ind-event-btn lg:text-[37px] text-[20px] lg:w-[360px] w-[150px] lg:h-[60px] lg:mt-10 mt-3 text-black font-bold">
+            <button
+              className="ind-event-btn lg:text-[37px] text-[20px] lg:w-[360px] w-[150px] lg:h-[60px] lg:mt-10 mt-3 text-black font-bold"
+              onClick={() => {
+                navigate(`/events/eventsRegSingle`);
+              }}
+            >
               Register Now
             </button>
           </div>

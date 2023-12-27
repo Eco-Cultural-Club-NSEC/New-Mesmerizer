@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import "./Events.css";
 import demoImage from "../../assets/demo-event-image.png";
+import { useNavigate } from "react-router-dom";
 
 const E1 = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const navigate = useNavigate();
 
   return (
     <div className="individual-event flex flex-col justify-center items-center lg:h-[245vh] h-[230vh]">
@@ -16,12 +18,14 @@ const E1 = () => {
           alt="demoimage"
         /> */}
       </div>
-      
+
       <div className="flex flex-col justify-center items-center">
-      <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
-        Fantasia Flicks
-      </h1>
-      <h2 className="align middle lg:text-[30px] text-[20px] text-white">Short Film</h2>
+        <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
+          Fantasia Flicks
+        </h1>
+        <h2 className="align middle lg:text-[30px] text-[20px] text-white">
+          Short Film
+        </h2>
       </div>
       <div className=" flex flex-col lg:flex placeholder:mt-4 lg:w-full w-80">
         <div className="flex flex-col lg:flex-row  justify-between">
@@ -68,8 +72,7 @@ const E1 = () => {
               Coordinators
             </span>
             <ol className="mt-1 lg:text-[30px] text-[15px]">
-              <li>Debobrata Patra - +91 62915 78830
-</li>
+              <li>Debobrata Patra - +91 62915 78830</li>
               <li>Sandipan Chowdhury - +91 82500 74612</li>
             </ol>
           </div>
@@ -138,7 +141,12 @@ const E1 = () => {
                 </div>
               </div>
             </div>
-            <button className="ind-event-btn lg:text-[37px] text-[20px] lg:w-[360px] w-[150px] lg:h-[60px] lg:mt-10 mt-3 text-black font-bold">
+            <button
+              className="ind-event-btn lg:text-[37px] text-[20px] lg:w-[360px] w-[150px] lg:h-[60px] lg:mt-10 mt-3 text-black font-bold"
+              onClick={() => {
+                navigate(`/events/eventsRegMulti`);
+              }}
+            >
               Register Now
             </button>
           </div>

@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import "./Events.css";
 import demoImage from "../../assets/demo-event-image.png";
+import { useNavigate } from "react-router-dom";
 
 const E1 = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const navigate = useNavigate();
 
   return (
     <div className="individual-event flex flex-col justify-center items-center lg:h-[220vh] h-[200vh]">
@@ -17,10 +19,12 @@ const E1 = () => {
         /> */}
       </div>
       <div className="flex flex-col justify-center items-center">
-      <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
-       Spellbound Sagas
-      </h1>
-      <h2 className="align middle lg:text-[30px] text-[20px] text-white">Creative Writing</h2>
+        <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
+          Spellbound Sagas
+        </h1>
+        <h2 className="align middle lg:text-[30px] text-[20px] text-white">
+          Creative Writing
+        </h2>
       </div>
       <div className=" flex flex-col lg:flex placeholder:mt-4 lg:w-full w-80">
         <div className="flex flex-col lg:flex-row  justify-between">
@@ -127,7 +131,12 @@ const E1 = () => {
                 </div>
               </div>
             </div>
-            <button className="ind-event-btn lg:text-[37px] text-[20px] lg:w-[360px] w-[150px] lg:h-[60px] lg:mt-10 mt-3 text-black font-bold">
+            <button
+              className="ind-event-btn lg:text-[37px] text-[20px] lg:w-[360px] w-[150px] lg:h-[60px] lg:mt-10 mt-3 text-black font-bold"
+              onClick={() => {
+                navigate(`/events/eventsRegSingle`);
+              }}
+            >
               Register Now
             </button>
           </div>
