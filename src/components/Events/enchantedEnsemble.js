@@ -10,7 +10,7 @@ const E1 = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="individual-event flex flex-col justify-center items-center lg:h-[220vh] h-[200vh]">
+    <div className="individual-event flex flex-col justify-center items-center min-h-screen">
       <div className="flex justify-center items-center">
         <img
           className=" lg:w-[1112px] lg:h-[392px] w-[250px] h-[110px] mt-4"
@@ -23,7 +23,7 @@ const E1 = () => {
       <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
         Enchanted Ensemble
       </h1>
-      <h2 className="align middle lg:text-[30px] text-[20px] text-white">Creative Group Dance</h2>
+      <h2 className="align middle lg:text-[25px] text-[20px] text-white">Creative Group Dance</h2>
       </div>
       <div className=" flex flex-col lg:flex placeholder:mt-4 lg:w-full w-80">
         <div className="flex flex-col lg:flex-row  justify-between">
@@ -31,7 +31,7 @@ const E1 = () => {
             <span className=" lg:text-[63px] lg:mt-0 mt-4 text-[20px]">
               Event Guidelines
             </span>
-            <ol className="mt-2 lg:text-[30px] text-[15px]">
+            <ol className="mt-2 lg:text-[25px] text-[15px]">
               <li>1. <b>Duration</b>: 6 minutes per team</li>
               <li>2. <b>Team Size:</b> 6 members</li>
               <li>3. <b>Dance Forms:</b> Classical, Western, or any creative style</li>
@@ -56,7 +56,7 @@ const E1 = () => {
             <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
               Coordinators
             </span>
-            <ol className="mt-1 lg:text-[30px] text-[15px]">
+            <ol className="mt-1 lg:text-[25px] text-[15px]">
               <li>Kazi Nafisa Parvin - +91 70447 48396</li>
               <li>Swatik Nandy - +91 91236 47752</li>
             </ol>
@@ -66,7 +66,7 @@ const E1 = () => {
         <div className="flex flex-col lg:flex-row lg:justify-between m-2">
           <div className=" lg:top-[250px] relative lg:ml-[70px] ml-[10px]  flex flex-col">
             <span className="lg:text-[63px] text-[20px]">Details</span>
-            <ol className="mt-1 lg:text-[30px] text-[15px]">
+            <ol className="mt-1 lg:text-[25px] text-[15px]">
               <li>
                 <div className="flex space-x-4">
                   <div className="flex-none font-bold">Date:</div>

@@ -10,7 +10,7 @@ const E1 = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="individual-event flex flex-col justify-center items-center lg:h-[220vh] h-[230vh]">
+    <div className="individual-event flex flex-col justify-center items-center min-h-screen">
       <div className="flex justify-center items-center debate lg:h-[500px] lg:w-[800px] h-[200px] w-[300px]">
         {/* <img
           className=" lg:w-[1112px] lg:h-[392px] w-[250px] h-[110px] mt-4"
@@ -33,7 +33,7 @@ const E1 = () => {
             <span className=" lg:text-[63px] lg:mt-0 mt-4 text-[20px]">
               Event Guidelines
             </span>
-            <ol className="mt-2 lg:text-[30px] text-[15px]">
+            <ol className="mt-2 lg:text-[25px] text-[15px]">
               <li>
                 1. <b>Team Composition :</b> 2 members from the same college{" "}
               </li>
@@ -70,7 +70,7 @@ const E1 = () => {
             <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
               Coordinators
             </span>
-            <ol className="mt-1 lg:text-[30px] text-[15px]">
+            <ol className="mt-1 lg:text-[25px] text-[15px]">
               <li>Nayanika Mukherjee - +91 87298 14281</li>
               <li>Manan - +91 76040 70020</li>
             </ol>
@@ -80,7 +80,7 @@ const E1 = () => {
         <div className="flex flex-col lg:flex-row lg:justify-between m-2">
           <div className=" lg:top-[250px] relative lg:ml-[70px] ml-[10px]  flex flex-col">
             <span className="lg:text-[63px] text-[20px]">Details</span>
-            <ol className="mt-1 lg:text-[30px] text-[15px]">
+            <ol className="mt-1 lg:text-[25px] text-[15px]">
               <li>
                 <div className="flex space-x-4">
                   <div className="flex-none font-bold">Date:</div>

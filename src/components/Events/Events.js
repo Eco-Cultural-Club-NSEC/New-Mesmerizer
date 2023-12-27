@@ -6,10 +6,9 @@ import eventTimeline from "../../assets/event-timeline.png";
 
 const Events = () => {
   return (
-    <div className="events flex justify-center items-center flex-col lg:h-[420vh] h-[830vh]">
+    <div className="events flex justify-center items-center flex-col min-h-screen">
       <h1 className="text-center blue-main lg:text-[100px] text-[60px]">Events</h1>
-      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-[5rem] gap-[2rem] w-[80%] ">
-        {/* <div className="grid-container"> */}
+      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-[5rem] gap-[2rem] w-[80%] mb-[50px] ">
         <Cards eventName = "mystical_controversy" imgURL ="https://i.ibb.co/2FZRXyt/Event-1.webp" />
         <Cards eventName = "enchanted_legends" imgURL ="https://i.ibb.co/wJ2sqq5/Event-2.webp" />
         <Cards eventName = "fantasia_flicks" imgURL = "https://i.ibb.co/0QTt8DT/Event-3.webp" />
@@ -24,7 +23,7 @@ const Events = () => {
         <Cards eventName = "enchanted_ensemble" imgURL ="https://i.ibb.co/tb9vcGZ/Event-12.webp" />
       </div>
 
-      <div className="flex flex-col lg:mt-[133px] mt-10 items-center justify-center">
+      {/* <div className="flex flex-col lg:mt-[133px] mt-10 items-center justify-center">
         
           <h1 className="lg:text-[75px] text-[50px] purple-main  text-center">
             Events
@@ -34,7 +33,7 @@ const Events = () => {
           </h1>
        
         <img className=" mt-4 lg:w-[606px] w-[330px] lg:h-[758px] " src={eventTimeline} alt="eventtimeline" />
-      </div>
+      </div> */}
     </div>
   );
 };

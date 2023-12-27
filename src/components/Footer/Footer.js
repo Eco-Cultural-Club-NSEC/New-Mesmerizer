@@ -5,7 +5,7 @@ import logo2 from "../../assets/eco-logo.webp"
 
 const Footer = () => {
   return (
-    <div className="footer lg:h-[110vh] h-[90vh] flex flex-col justify-center items-center">
+    <div className="footer lg:h-[110vh] h-[100vh] flex flex-col justify-center items-center">
       <div className="logo lg:h[100px] h-[60px] lg:w-[300px] flex flex-col justify-center items-center lg:mt-[70px]">
         <img src={logo1} alt="" loading="lazy" className='lg:h-[130px] h-[60px] lg:w-[340px]' />
         <div className="socials lg:mt-[30px] mt-[6px]">
