@@ -2,21 +2,9 @@ import React, { useState } from "react";
 import "./common.css";
 import { singleRegistration } from "../../../utils/regFunctions";
 import qrcode from "../../../assets/QR.jpg";
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
-
 import "react-toastify/dist/ReactToastify.css";
 import { validation } from "../../../utils/validation";
-
-// const schema = yup.object().shape({
-//   name: yup.string().required("First Name should be required please"),
-//   collegeName: yup.string().required(),
-//   email: yup.string().email().required(),
-//   WANumber: yup.number().positive().integer().required(),
-//   altNumber: yup.number().positive().integer(),
-// });
 
 const Registration = () => {
   const [inputList, setinputList] = useState([{ Name: "" }]);
@@ -26,7 +14,16 @@ const Registration = () => {
   const [emailID, setEmailID] = useState("");
   const [ss, setSS] = useState();
   const [selectedValue, setSelectedValue] = useState("");
-  const options = ["Option 1", "Option 2", "Option 3", "Option 4"];
+  const options = [
+    "Sorcerous Solo (₹70)",
+    "Western Mystique (₹70)",
+    "Mayhem Showdown (₹60)",
+    "Mridangam (₹70)",
+    "Rhythmic Wizardry (₹70)",
+    "Artistic Odyssey (₹50)",
+    "SpellBound Sagas (₹50)",
+    "Enchanted Legends (₹50)",
+  ];
 
   const handleEvent = (e) => {
     setSelectedValue(e.target.value);
@@ -68,30 +65,21 @@ const Registration = () => {
     setSS(e.target.files[0]);
   };
 
-  // const { handleSubmit, errors } = useForm({
-  //   resolver: yupResolver(schema),
-  // });
-
-  // const submitForm = (userInfo) => {
-  //   console.log(userInfo);
-  // };
-
   const handleSubmitForm = async (e) => {
     e.preventDefault();
     if (
-      !validation(userInfo.Name) &&
-      !validation(userInfo.College_Name) &&
-      !validation(userInfo.Payment_id) &&
-      !validation(userInfo.Email) &&
-      !validation(userInfo.Whatsapp_Number)
+      validation(userInfo.Name) &&
+      validation(userInfo.College_Name) &&
+      validation(userInfo.Payment_id) &&
+      validation(userInfo.Email) &&
+      validation(userInfo.Whatsapp_Number) &&
+      ss
     ) {
-      toast("Khankir chele form bhora sekh!!", { icon: "😡" });
+      const data = await singleRegistration(userInfo, ss);
+      toast("We will reach out to you soon!!", { icon: "🚀" });
       return;
     }
-    const data = await singleRegistration(userInfo, ss);
-    toast("We will reach out to you soon!!", { icon: "🚀" });
-    console.log(data);
-    // console.log(errors);
+    toast("Please fill the form carefully!!", { icon: "🙁" });
   };
 
   return (
@@ -108,123 +96,155 @@ const Registration = () => {
         pauseOnHover
         theme="dark"
       />
-      <form
-        className="text-white flex justify-center items-center flex-col"
-        // onSubmit={handleSubmit(submitForm)}
-      >
-        <p className="text-[30px] mb-[50px] font-bold">Registration form</p>
-        <div className="flex justify-between items-center flex-row w-[100%] mb-[50px]">
-          <div>
-            <p>For any issues contact:</p>
-            <p>Annesha Roy(Treasurer)</p>
-            <p>8514012811</p>
-            <p>8514012811@okbizaxis</p>
+      <div className="rounded-xl lg:w-[42%] w-[87%] bg-gradient-to-b from-[#00FFFF] to-black-500 p-[0.75px]">
+        <form className="text-white bg-[#1E212B] flex justify-center items-center flex-col rounded-xl lg:w-[100%] w-[100%]">
+          <p className="lg:text-[30px] text-[25px] lg:mb-[50px] mb-[30px] font-bold mt-10">
+            Registration form
+          </p>
+          <div className="flex justify-between items-center flex-col w-[80%] mb-[50px]">
+            <div className="flex justify-between items-center lg:flex-row flex-col-reverse w-full">
+              <div className="lg:mt-0 mt-4">
+                <p>
+                  Mobile number: <b>8514012811</b>
+                </p>
+                <p>
+                  UPI id: <b>8514012811@okbizaxis</b>
+                </p>
+              </div>
+              <img src={qrcode} alt="QR code" className="h[150px] w-[150px]" />
+            </div>
+            <div className="notes w-[109%]">
+              <div className="flex items-center flex-col mt-[30px] text-center">
+                <b>Note:</b>
+                <li className="text-[14px]">
+                  <i>Take a screenshot of the successful payment.</i>
+                </li>
+                <li className="text-[14px]">
+                  <i>Participant must be a present college student.</i>
+                </li>
+                <li className="text-[14px]">
+                  <i>The registration fee amount is non-refundable.</i>
+                </li>
+              </div>
+            </div>
           </div>
-          <img src={qrcode} alt="QR code" className="h[150px] w-[150px]" />
-        </div>
-        <label className="text-white flex items-start flex-col mb-5 text-[18px]">
-          Event
-          <div className="flex">
-            <select
-              id="dropdown"
-              value={selectedValue}
-              onChange={handleEvent}
-              className="text-white text-[15px] w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
-            >
-              <option value="" className="text-white">
-                Select...
-              </option>
-              {options.map((option, index) => (
-                <option key={index} value={option}>
-                  {option}
+          {/* <label className="text-white flex items-start flex-col mb-5 text-[18px]">
+            Event
+            <div className="flex">
+              <select
+                id="dropdown"
+                value={selectedValue}
+                onChange={handleEvent}
+                className="text-white text-[15px] lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+              >
+                <option value="" className="text-white">
+                  Select...
                 </option>
-              ))}
-            </select>
-          </div>
-        </label>
-        <label className="flex items-start flex-col mb-5 text-[18px]">
-          Name
-          <div className="flex">
+                {options.map((option, index) => (
+                  <option key={index} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </label> */}
+          <label className="text-white flex items-start flex-col mb-5 text-[18px]">
+            Event
+            <div className="flex">
+              <select
+                id="dropdown"
+                value={selectedValue}
+                onChange={handleEvent}
+                className="text-white text-[15px] lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-[#1E212B] mt-3"
+              >
+                <option value="" className="text-white">
+                  Select...
+                </option>
+                {options.map((option, index) => (
+                  <option key={index} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </label>
+
+          <label className="flex items-start flex-col mb-5 text-[18px]">
+            Name
+            <div className="flex">
+              <input
+                type="text"
+                className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+                placeholder="Enter your name"
+                name="name"
+                onChange={(e) => handleName(e)}
+                required
+              />
+            </div>
+          </label>
+          <label className="flex items-start flex-col mb-5 text-[18px]">
+            College Name
             <input
               type="text"
-              className="text-white w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
-              placeholder="Enter your name"
-              name="name"
-              onChange={(e) => handleName(e)}
+              className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+              placeholder="Enter your college name"
+              name="collegeName"
+              onChange={(e) => handleCollegeName(e)}
               required
             />
-            {/* <p> {errors.name?.message} </p> */}
-          </div>
-        </label>
-        <label className="flex items-start flex-col mb-5 text-[18px]">
-          College Name
-          <input
-            type="text"
-            className="text-white w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
-            placeholder="Enter your college name"
-            name="collegeName"
-            onChange={(e) => handleCollegeName(e)}
-            required
-          />
-          {/* <p> {errors.collegeName?.message} </p> */}
-        </label>
-        <label className="flex items-start flex-col mb-5 text-[18px]">
-          WhatsApp number
-          <input
-            type="number"
-            className="text-white w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
-            placeholder="Enter your WhatsApp number"
-            name="WANumber"
-            onChange={(e) => handleWANumber(e)}
-            required
-          />
-          {/* <p> {errors.WANumber?.message} </p> */}
-        </label>
-        <label className="flex items-start flex-col mb-5 text-[18px]">
-          Alternate contact number
-          <input
-            type="number"
-            className="text-white w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
-            placeholder="Enter your alternate number"
-            name="altNumber"
-            onChange={(e) => handleAltNumber(e)}
-            required
-          />
-          {/* <p> {errors.altNumber?.message} </p> */}
-        </label>
-        <label className="flex items-start flex-col mb-5 text-[18px]">
-          Email address
-          <input
-            type="email"
-            className="text-white w-[420px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
-            placeholder="Enter your email address"
-            name="email"
-            onChange={(e) => handleEmail(e)}
-            required
-          />
-          {/* <p> {errors.email?.message} </p> */}
-        </label>
-        <label className="flex items-start flex-col">
-          Upload Image:
-          <input
-            type="file"
-            className="text-white"
-            name="email"
-            onChange={handleSS}
-          />
-        </label>
-        <div className="flex items-start flex-col mt-[30px]">
-          <li>Participant must be a present college student.</li>
-          <li>The registration fee amount is non-refundable.</li>
-        </div>
-        <button
-          onClick={handleSubmitForm}
-          style={{ boxShadow: "3px 3px yellow" }}
-          className="text-black bg-black-500 mt-5 bg-cyan-400 font-semibold lg:px-6 px-3 lg:py-2 py-1 rounded-lg relative lg:left-0 left-[-10px] lg:bottom-[7px] bottom-[3px] lg:text-[18px] text-[14px]"
-        >
-          Submit
-        </button>
-      </form>
+          </label>
+          <label className="flex items-start flex-col mb-5 text-[18px]">
+            WhatsApp number
+            <input
+              type="number"
+              className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+              placeholder="Enter your WhatsApp number"
+              name="WANumber"
+              onChange={(e) => handleWANumber(e)}
+              required
+            />
+          </label>
+          <label className="flex items-start flex-col mb-5 text-[18px]">
+            Alternate contact number
+            <input
+              type="number"
+              className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+              placeholder="Enter your alternate number"
+              name="altNumber"
+              onChange={(e) => handleAltNumber(e)}
+              required
+            />
+          </label>
+          <label className="flex items-start flex-col mb-5 text-[18px]">
+            Email address
+            <input
+              type="email"
+              className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
+              placeholder="Enter your email address"
+              name="email"
+              onChange={(e) => handleEmail(e)}
+              required
+            />
+          </label>
+          <label className="flex items-center justify-center flex-col mb-5 lg:w-full w-[80%]">
+            Upload Payment Screenshot (only in .jpeg, .jpg and .png):
+            <input
+              type="file"
+              className="text-white text-[16.5px] text-[12px] w-[220px] mt-4"
+              name="email"
+              onChange={handleSS}
+              accept=".jpeg, .jpg, .png"
+            />
+          </label>
+          <button
+            onClick={handleSubmitForm}
+            style={{ boxShadow: "3px 3px yellow" }}
+            className="text-black mb-8 bg-black-500 mt-5 bg-cyan-400 font-semibold lg:px-6 px-3 lg:py-2 py-1 rounded-lg relative lg:left-0 left-[-10px] lg:bottom-[7px] bottom-[3px] lg:text-[18px] text-[14px]"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
       <ToastContainer
         position="top-center"
         autoClose={5000}

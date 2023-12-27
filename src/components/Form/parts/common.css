@@ -3,7 +3,7 @@
     src: url("../../../assets/AcidGrotesk-Regular.otf");
   }
 
-  p, label, li{
+  p, label, li, button{
     font-family: acidGrotesk;
   }
 
@@ -11,4 +11,10 @@
     font-size: 15px;
     padding-left: 20px;
     padding-bottom: 5px;
+  }
+
+
+  form{
+    background: none;
+    position: relative;
   }

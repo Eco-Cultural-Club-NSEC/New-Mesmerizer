@@ -14,7 +14,7 @@ const EventReg = () => {
           alt="demoimage"
         />
       </div>
-      <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">Western Mistique</h1>
+      <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle mb-10">Western Mistique</h1>
       <Registration/>
       <MultiRegs/>
     </div>
