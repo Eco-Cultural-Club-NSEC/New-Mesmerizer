@@ -265,7 +265,7 @@ const Registration = () => {
                 />
               </label>
               <label className="flex items-start flex-col mb-5 text-[18px]">
-              UPI Payment ID
+              UPI transaction ID
               <input
                 type="text"
                 className="text-white lg:w-[420px] w-[250px] h-[32px] rounded-md border border-2 border-[#474747] bg-transparent mt-3"
