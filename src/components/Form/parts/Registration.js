@@ -124,10 +124,11 @@ const Registration = () => {
               <div className="flex justify-between items-center lg:flex-row flex-col-reverse w-full">
                 <div className="lg:mt-0 mt-4">
                   <p>
-                    Mobile number: <b>8514012811</b>
-                  </p>
-                  <p>
                     UPI id: <b>8514012811@okbizaxis</b>
+                  </p>
+                  <br />
+                  <p>
+                    Mobile number: <b>8514012811</b>
                   </p>
                 </div>
                 <img
