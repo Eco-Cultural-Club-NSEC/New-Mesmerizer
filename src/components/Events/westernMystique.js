@@ -107,7 +107,7 @@ const E1 = () => {
                   />
                   <div className="lg:w-[134px] w-[54px]">
                     <p className="whitespace-normal lg: mt-[4px] lg:text-[24px] text-white text-center">
-                      Abhinil Nath
+                      N/A
                     </p>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ const E1 = () => {
                   />
                   <div className="lg:w-[134px] w-[54px] ">
                     <p className="whitespace-normal lg: mt-[4px] lg:text-[24px] text-white text-center">
-                      Rajit Dutta
+                      N/A
                     </p>
                   </div>
                 </div>
