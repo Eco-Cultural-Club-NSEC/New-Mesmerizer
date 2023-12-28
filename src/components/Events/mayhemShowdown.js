@@ -61,8 +61,8 @@ const E1 = () => {
               Coordinators
             </span>
             <ol className="mt-1 lg:text-[25px] text-[15px]">
-              <li>Suvajit Kundu - +91 94743 73223</li>
-              <li>Neha Gurung - +91 99321 89379</li>
+              <li>Junaid Tarafdar - +91 98746 73245</li>
+              <li>Sriparna Saha - +91 75509 63686</li>
             </ol>
           </div>
         </div>

@@ -57,7 +57,7 @@ const E1 = () => {
             </span>
             <ol className="mt-1 lg:text-[25px] text-[15px]">
               <li>Sayani Halder - +91 98742 68188</li>
-              <li>Anwesha Roy - +91 74079 84987</li>
+              <li>Sagarika Roy - +91 76019 84232</li>
             </ol>
           </div>
         </div>

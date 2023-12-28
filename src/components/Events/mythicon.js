@@ -70,8 +70,8 @@ const E1 = () => {
               Coordinators
             </span>
             <ol className="mt-1 lg:text-[25px] text-[15px]">
-              <li>Junaid Tarafdar - +91 98746 73245</li>
-              <li>Sriparna Saha - +91 75509 63686</li>
+              <li>Yash Shaw - +91 74395 58508</li>
+              <li>Jaisal Joshi - +91 74394 25842</li>
             </ol>
           </div>
         </div>
