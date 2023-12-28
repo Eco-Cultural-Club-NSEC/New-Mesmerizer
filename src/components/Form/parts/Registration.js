@@ -128,6 +128,10 @@ const Registration = () => {
                     UPI id: <b>8514012811@okbizaxis</b>
                   </p>
                   <br />
+                  <p>For any issues contact:</p>
+                  <p>
+                    Anirban Ghana (<i>Asst. Treasurer</i>)
+                  </p>
                   <p>
                     Mobile number: <b>8514012811</b>
                   </p>

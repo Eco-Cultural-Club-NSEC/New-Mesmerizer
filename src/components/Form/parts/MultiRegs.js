@@ -135,11 +135,16 @@ const Registration = () => {
             <div className="flex justify-between items-center flex-col w-[80%] mb-[50px]">
               <div className="flex justify-between items-center lg:flex-row flex-col-reverse w-full">
                 <div className="lg:mt-0 mt-4">
+                <p>
+                    UPI id: <b>8514012811@okbizaxis</b>
+                  </p>
+                  <br />
+                  <p>For any issues contact:</p>
                   <p>
-                    Mobile number: <b>8514012811</b>
+                    Anirban Ghana (<i>Asst. Treasurer</i>)
                   </p>
                   <p>
-                    UPI id: <b>8514012811@okbizaxis</b>
+                    Mobile number: <b>8514012811</b>
                   </p>
                 </div>
                 <img
