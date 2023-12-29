@@ -1,7 +1,7 @@
 export const validation = (data) => {
   if (typeof data === "string" || data instanceof String) {
     let info = data.trim();
-    console.log(data);
+    // console.log(data);
     if (info === "") return false;
     else return true;
   } else {

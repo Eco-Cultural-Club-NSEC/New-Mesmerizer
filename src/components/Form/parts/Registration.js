@@ -86,7 +86,6 @@ const Registration = () => {
     ) {
       setSpinner(true);
       const data = await singleRegistration(userInfo, ss);
-      setSpinner(false);
       setAltNumber("");
       setCollegeName("");
       setwaNumber("");
@@ -95,6 +94,7 @@ const Registration = () => {
       setPayID("");
       setinputList("");
       setSelectedValue("");
+      setSpinner(false);
       toast("We will reach out to you soon!!", { icon: "🚀" });
       return;
     }
@@ -282,17 +282,14 @@ const Registration = () => {
                 required
               />
             </label>
-            <button
-              onClick={handleSubmitForm}
-              style={{ boxShadow: "3px 3px yellow" }}
-              className="text-black mb-8 bg-black-500 mt-5 bg-cyan-400 font-semibold lg:px-6 px-3 lg:py-2 py-1 rounded-lg relative lg:left-0 left-[-10px] lg:bottom-[7px] bottom-[3px] lg:text-[18px] text-[14px]"
-            >
-              {spinner ? (
+            {spinner ? (
+              <div className="p-4">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
+                  fill="green"
                 >
                   <style>{`.spinner_6kVp{transform-origin:center;animation:spinner_irSm .75s infinite linear}@keyframes spinner_irSm{100%{transform:rotate(360deg)}}`}</style>
                   <path
@@ -300,10 +297,17 @@ const Registration = () => {
                     className="spinner_6kVp"
                   />
                 </svg>
-              ) : (
+              </div>
+            ) : (
+              <button
+                onClick={handleSubmitForm}
+                style={{ boxShadow: "3px 3px yellow" }}
+                className="text-black mb-8 bg-black-500 mt-5 bg-cyan-400 font-semibold lg:px-6 px-3 lg:py-2 py-1 rounded-lg relative lg:left-0 left-[-10px] lg:bottom-[7px] bottom-[3px] lg:text-[18px] text-[14px]"
+                disabled={spinner}
+              >
                 <span>Submit</span>
-              )}
-            </button>
+              </button>
+            )}
           </form>
         </div>
       </div>
