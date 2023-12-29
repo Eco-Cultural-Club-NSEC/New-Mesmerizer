@@ -40,7 +40,7 @@ const E1 = () => {
                 2. <b>Language :</b> English only
               </li>
               <li>
-                3. <b>Forms Allowed :</b> Prose (Max 100 words) and Poetry (Max
+                3. <b>Forms Allowed :</b> Prose (Max 1000 words) and Poetry (Max
                 200 words)
               </li>
               <li>
