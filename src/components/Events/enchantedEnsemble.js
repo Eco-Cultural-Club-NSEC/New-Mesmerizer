@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Events.css";
 import demoImage from "../../assets/demo-event-image.png";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 const E1 = () => {
   useEffect(() => {
@@ -18,12 +18,14 @@ const E1 = () => {
           alt="demoimage"
         />
       </div>
-      
+
       <div className="flex flex-col justify-center items-center">
-      <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
-        Enchanted Ensemble
-      </h1>
-      <h2 className="align middle lg:text-[25px] text-[20px] text-white">Creative Group Dance</h2>
+        <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
+          Enchanted Ensemble
+        </h1>
+        <h2 className="align middle lg:text-[25px] text-[20px] text-white">
+          Creative Group Dance
+        </h2>
       </div>
       <div className=" flex flex-col lg:flex placeholder:mt-4 lg:w-full w-80">
         <div className="flex flex-col lg:flex-row  justify-between">
@@ -32,34 +34,50 @@ const E1 = () => {
               Event Guidelines
             </span>
             <ol className="mt-2 lg:text-[25px] text-[15px]">
-              <li>1. <b>Duration</b>: 6 minutes per team</li>
-              <li>2. <b>Team Size:</b> 6 members</li>
-              <li>3. <b>Dance Forms:</b> Classical, Western, or any creative style</li>
               <li>
-                4. <b>Costume, Props, Makeup:</b> Participants are responsible for their
-                attire, accessories, props, and makeup—strictly prohibiting
-                props from causing damage, e.g., fire.
+                1. <b>Duration</b>: 6 minutes per team
               </li>
               <li>
-                5. <b>Music:</b> Teams to bring music on a Pendrive with a phone backup.
+                2. <b>Team Size:</b> 6 members
               </li>
               <li>
-                6. <b>Theme: </b>Performances centred around Mythology, Magic, and
-                Mayhem.
+                3. <b>Dance Forms:</b> Classical, Western, or any creative style
               </li>
               <li>
-                6. <b>Eligibility:</b> All participants must be from the same college.
+                4. <b>Costume, Props, Makeup:</b> Participants are responsible
+                for their attire, accessories, props, and makeup—strictly
+                prohibiting props from causing damage, e.g., fire.
+              </li>
+              <li>
+                5. <b>Music:</b> Teams to bring music on a Pendrive with a phone
+                backup.
+              </li>
+              <li>
+                6. <b>Theme: </b>Performances centred around Mythology, Magic,
+                and Mayhem.
+              </li>
+              <li>
+                6. <b>Eligibility:</b> All participants must be from the same
+                college.
               </li>
             </ol>
           </div>
-          <div className="px-3 flex flex-col ml-[10px] lg:mr-[140px]">
-            <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
-              Coordinators
-            </span>
-            <ol className="mt-1 lg:text-[25px] text-[15px]">
-              <li>Kazi Nafisa Parvin - +91 70447 48396</li>
-              <li>Swatik Nandy - +91 91236 47752</li>
-            </ol>
+          <div className="px-3 flex flex-col lg:justify-between ml-[10px] lg:mr-[140px]">
+            <div className="">
+              <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
+                Coordinators
+              </span>
+              <ol className="mt-1 lg:text-[25px] text-[15px]">
+                <li>Kazi Nafisa Parvin - +91 70447 48396</li>
+                <li>Swatik Nandy - +91 91236 47752</li>
+              </ol>
+            </div>
+            <div className="">
+              <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
+                Registration fees
+              </span>
+              <p className="lg:text-[40px] text-[15px] text-[#FF0000]">₹150 for a team of 6</p>
+            </div>
           </div>
         </div>
 
@@ -126,11 +144,12 @@ const E1 = () => {
                 </div>
               </div>
             </div>
-            <button className="ind-event-btn lg:text-[37px] text-[20px] lg:w-[360px] w-[150px] lg:h-[60px] lg:mt-10 mt-3 text-black font-bold"
-            onClick=
-            {() => {
-              navigate(`/events/eventsRegMulti`);
-            }}>
+            <button
+              className="ind-event-btn lg:text-[37px] text-[20px] lg:w-[360px] w-[150px] lg:h-[60px] lg:mt-10 mt-3 text-black font-bold"
+              onClick={() => {
+                navigate(`/events/eventsRegMulti`);
+              }}
+            >
               Register Now
             </button>
           </div>

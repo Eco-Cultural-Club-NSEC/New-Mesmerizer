@@ -22,7 +22,7 @@ const Registration = () => {
 
   const options = [
     "Enchanted Ensemble (₹150 for a team of 6)",
-    "Mythicon (₹250 for a team of 9-10)",
+    "Mythicon - I - Fashion Show (₹250 for a team of 9-10)",
     "Fantasia Flicks (₹250 for the whole team)",
     "Mystical Controversy (₹70 for a team of 2)",
   ];

@@ -32,7 +32,9 @@ const E1 = () => {
             <span className=" lg:text-[63px] lg:mt-0 mt-4 text-[20px]">
               Event Guidelines
             </span>
-            <ol className="mt-2 lg:text-[25px] text-[15px]">
+            <div className="mt-2">
+              <p className="lg:text-[35px] text-[20px] text-white">Fashion Show</p>
+              <ol className="mt-2 lg:text-[25px] text-[15px]">
               <li>
                 1. <b>Event Theme :</b> Frightful Fairytales
               </li>
@@ -64,15 +66,55 @@ const E1 = () => {
                 of the Organizing Committee.
               </li>
             </ol>
+            </div>
+            <div className="mt-2">
+              <p className="lg:text-[35px] text-[20px] text-white">Cosplay</p>
+              <ol className="mt-2 lg:text-[25px] text-[15px]">
+                <li>
+                  1. <b>Theme :</b> Open
+                </li>
+                <li>
+                  2. <b>Participants :</b> Solo
+                </li>
+                <li>
+                  3. <b>Rounds :</b> 1 Round only, no preliminaries
+                </li>
+                <li>
+                  4. <b>Time Allotment :</b> No Time Allotment
+                </li>
+                <li>
+                  5. <b>Vulgarity Policy :</b> Strictly no vulgarity allowed.
+                </li>
+                <li>
+                  6. <b>Dress and Makeup Room :</b> A dedicated dress and makeup
+                  room will be provided
+                </li>
+                <li>
+                  7. <b>Note :</b> Rules are subject to change at the discretion
+                  of the Organizing Committee.
+                </li>
+              </ol>
+            </div>
           </div>
-          <div className="px-3 flex flex-col ml-[10px] lg:mr-[140px]">
-            <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
-              Coordinators
-            </span>
-            <ol className="mt-1 lg:text-[25px] text-[15px]">
-              <li>Yash Shaw - +91 74395 58508</li>
-              <li>Jaisal Joshi - +91 74394 25842</li>
-            </ol>
+          <div className="px-3 flex flex-col lg:justify-between ml-[10px] lg:mr-[140px] ">
+            <div className="">
+              <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
+                Coordinators
+              </span>
+              <ol className="mt-1 lg:text-[25px] text-[15px]">
+                <li>Yash Shaw - +91 74395 58508</li>
+                <li>Jaisal Joshi - +91 74394 25842</li>
+              </ol>
+            </div>
+            <div className="">
+              <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
+                Registration fees
+              </span>
+              <p className="lg:text-[35px] text-[15px]">
+                <p className="text-[#FF0000]">₹250 for team of 9-10</p>
+                <p className="text-[#FF0000]">₹100 for 1</p>
+              </p>
+            </div>
           </div>
         </div>
 

@@ -61,14 +61,22 @@ const E1 = () => {
               </li>
             </ol>
           </div>
-          <div className="px-3 flex flex-col ml-[10px] lg:mr-[140px]  lg:w-[610px]">
-            <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
-              Coordinators
-            </span>
-            <ol className="mt-1 lg:text-[25px] text-[15px]">
-              <li>Moupiya Mondal - +91 93303 97225</li>
-              <li>Tuhin Kumar Pranjal - +91 85839 11671</li>
-            </ol>
+          <div className="px-3 flex flex-col lg:justify-between ml-[10px] lg:mr-[140px]">
+            <div className="">
+              <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
+                Coordinators
+              </span>
+              <ol className="mt-1 lg:text-[25px] text-[15px]">
+                <li>Moupiya Mondal - +91 93303 97225</li>
+                <li>Tuhin Kumar Pranjal - +91 85839 11671</li>
+              </ol>
+            </div>
+            <div className="">
+              <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
+                Registration fees
+              </span>
+              <p className="lg:text-[40px] text-[15px] text-[#FF0000]">₹50</p>
+            </div>
           </div>
         </div>
 
