@@ -26,7 +26,6 @@ const Registration = () => {
     "Artistic Odyssey (₹50)",
     "SpellBound Sagas (₹50)",
     "Enchanted Legends (₹50)",
-    "Mythicon - II - Cosplay (₹100)"
   ];
 
   const handleEvent = (e) => {
