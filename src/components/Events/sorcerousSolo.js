@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./Events.css";
-import demoImage from "../../assets/demo-event-image.png";
 import { useNavigate } from "react-router-dom";
 
 const E1 = () => {
@@ -11,12 +10,12 @@ const E1 = () => {
 
   return (
     <div className="individual-event flex flex-col justify-center items-center min-h-screen">
-      <div className="flex justify-center items-center">
-        <img
+      <div className="flex justify-center items-center solo-dance lg:h-[600px] lg:w-[1000px] h-[200px] w-[300px] mt-2">
+        {/* <img
           className=" lg:w-[1112px] lg:h-[392px] w-[250px] h-[110px] mt-4"
           src={demoImage}
           alt="demoimage"
-        />
+        /> */}
       </div>
       <div className="flex flex-col justify-center items-center">
         <h1 className="mt-5 purple-main lg:text-[70px] text-[26px] align-middle">
@@ -147,7 +146,7 @@ const E1 = () => {
         </div>
       </div>
 
-      <div className="flex flex-col  lg:mr-[600px] lg:mt-[30px] mt-[35px] lg:px-0 px-5">
+      <div className="flex flex-col  lg:mr-[600px] lg:mt-[30px] mt-[35px] lg:px-4 px-5 lg:mb-[20px] mb-[10px]">
         <span style={{ color: "red" }} className="lg:text-4xl text-1xl ">
           PARTICIPANTS MUST REACH 30 MINUTES PRIOR TO THE EVENT
         </span>

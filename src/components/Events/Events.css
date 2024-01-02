@@ -7,7 +7,13 @@
   font-family: acidGrotesk;
   src: url("../../assets/AcidGrotesk-Regular.otf");
 }
-
+.solo-dance{
+  background-image: url("https://i.imgur.com/jblGbYE.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
 .events {
   background-image: url("../../assets/events.png");
   background-color: black;
@@ -16,10 +22,44 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.beat-box{
+  background-image: url("https://i.imgur.com/CoWk6xW.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
+.fashion-show{
+  background-image:url("https://i.imgur.com/RwssKXN.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
+.solo-singing{
+  background-image: url("https://i.imgur.com/eTGYodZ.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
+.street-dance{
+  background-image: url("https://i.imgur.com/maBJDJR.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
 .debate{
   background-image: url("https://i.ibb.co/KjcrWV4/debate.jpg");
   background-size: cover;
   /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center
+}
+.group-dance{
+  background-image: url("https://i.imgur.com/u06BrKy.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center
 }
