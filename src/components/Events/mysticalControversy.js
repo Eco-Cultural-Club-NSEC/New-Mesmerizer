@@ -161,8 +161,7 @@ const E1 = () => {
           </div>
         </div>
       </div>
-
-      <div className="flex flex-col  lg:mr-[600px] lg:mt-[30px] mt-[35px] lg:px-0 px-5">
+      <div className="flex flex-col  lg:mr-[600px] lg:mt-[30px] mt-[35px] lg:px-4 px-5 lg:mb-[20px] mb-[10px]">
         <span style={{ color: "red" }} className="lg:text-4xl text-1xl ">
           PARTICIPANTS MUST REACH 30 MINUTES PRIOR TO THE EVENT
         </span>
@@ -174,6 +173,7 @@ const E1 = () => {
           </p>
         </div>
       </div>
+     
     </div>
   );
 };
