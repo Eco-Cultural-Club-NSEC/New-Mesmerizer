@@ -76,6 +76,7 @@ const E1 = () => {
                 Registration fees
               </span>
               <p className="lg:text-[40px] text-[15px] text-[#FF0000]">₹150 for a team of 6</p>
+              <p className="lg:text-[40px] text-[15px] text-[#FF0000]">₹10 for each extra member</p>
             </div>
           </div>
         </div>
