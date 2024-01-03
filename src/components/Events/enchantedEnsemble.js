@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./Events.css";
-import demoImage from "../../assets/demo-event-image.png";
 import { useNavigate } from "react-router-dom";
 
 const E1 = () => {
@@ -11,12 +10,12 @@ const E1 = () => {
 
   return (
     <div className="individual-event flex flex-col justify-center items-center min-h-screen">
-      <div className="flex justify-center items-center">
-        <img
+      <div className="flex justify-center items-center group-dance lg:h-[600px] lg:w-[1000px] h-[200px] w-[300px] mt-4">
+        {/* <img
           className=" lg:w-[1112px] lg:h-[392px] w-[250px] h-[110px] mt-4"
           src={demoImage}
           alt="demoimage"
-        />
+        /> */}
       </div>
 
       <div className="flex flex-col justify-center items-center">
@@ -30,7 +29,7 @@ const E1 = () => {
       <div className=" flex flex-col lg:flex placeholder:mt-4 lg:w-full w-80">
         <div className="flex flex-col lg:flex-row  justify-between">
           <div className=" px-3 flex flex-col lg:ml-[70px] ml-[10px]">
-            <span className=" lg:text-[63px] lg:mt-0 mt-4 text-[20px]">
+            <span className=" lg:text-[55px] lg:mt-0 mt-4 text-[20px]">
               Event Guidelines
             </span>
             <ol className="mt-2 lg:text-[25px] text-[15px]">
@@ -64,7 +63,7 @@ const E1 = () => {
           </div>
           <div className="px-3 flex flex-col lg:justify-between ml-[10px] lg:mr-[140px]">
             <div className="">
-              <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
+              <span className="lg:text-[55px] text-[20px] lg:mt-0 mt-3 ">
                 Coordinators
               </span>
               <ol className="mt-1 lg:text-[25px] text-[15px]">
@@ -73,7 +72,7 @@ const E1 = () => {
               </ol>
             </div>
             <div className="">
-              <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3 ">
+              <span className="lg:text-[55px] text-[20px] lg:mt-0 mt-3 ">
                 Registration fees
               </span>
               <p className="lg:text-[40px] text-[15px] text-[#FF0000]">₹150 for a team of 6</p>
@@ -105,8 +104,8 @@ const E1 = () => {
               </li>
             </ol>
           </div>
-          <div className="px-2 flex flex-col lg:mr-[268px]">
-            <span className="lg:text-[63px] text-[20px] lg:mt-0 mt-3">
+          <div className="px-2 flex flex-col lg:mr-[210px]">
+            <span className="lg:text-[55px] text-[20px] lg:mt-0 mt-3">
               Deadline
             </span>
             <p
@@ -156,7 +155,7 @@ const E1 = () => {
         </div>
       </div>
 
-      <div className="flex flex-col  lg:mr-[600px] lg:mt-[30px] mt-[35px] lg:px-0 px-5">
+      <div className="flex flex-col  lg:mr-[600px] lg:mt-[30px] mt-[35px] lg:px-4 px-5 lg:mb-[20px] mb-[10px]">
         <span style={{ color: "red" }} className="lg:text-4xl text-1xl ">
           PARTICIPANTS MUST REACH 30 MINUTES PRIOR TO THE EVENT
         </span>
