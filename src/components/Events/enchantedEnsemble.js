@@ -37,7 +37,7 @@ const E1 = () => {
                 1. <b>Duration</b>: 6 minutes per team
               </li>
               <li>
-                2. <b>Team Size:</b> 6 members
+                2. <b>Team Size:</b> 6-9 members
               </li>
               <li>
                 3. <b>Dance Forms:</b> Classical, Western, or any creative style
