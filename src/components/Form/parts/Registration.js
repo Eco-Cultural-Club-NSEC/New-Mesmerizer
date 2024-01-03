@@ -95,7 +95,7 @@ const Registration = () => {
       setinputList("");
       setSelectedValue("");
       setSpinner(false);
-      toast("We will reach out to you soon!!", { icon: "🚀" });
+      toast("Submission successful!! We will reach out to you soon.", { icon: "✅" });
       return;
     }
     toast("Please fill the form carefully!!", { icon: "🙁" });
