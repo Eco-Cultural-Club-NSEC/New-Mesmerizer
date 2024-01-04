@@ -36,7 +36,7 @@ const E1 = () => {
               <p className="lg:text-[35px] text-[20px] text-white">Fashion Show</p>
               <ol className="mt-2 lg:text-[25px] text-[15px]">
               <li>
-                1. <b>Event Theme :</b> Frightful Fairytales
+                1. <b>Event Theme :</b> Open
               </li>
               <li>
                 2. <b>Participants :</b> 9-10 participants per team, strictly
