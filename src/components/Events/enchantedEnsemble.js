@@ -51,10 +51,6 @@ const E1 = () => {
                 5. <b>Music:</b> Teams to bring music on a Pendrive with a phone
                 backup.
               </li>
-              // <li>
-              //   6. <b>Theme: </b>Performances centred around Mythology, Magic,
-              //   and Mayhem.
-              // </li>
               <li>
                 6. <b>Eligibility:</b> All participants must be from the same
                 college.
