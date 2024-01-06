@@ -35,25 +35,25 @@ const E1 = () => {
             <div className="mt-2">
               <p className="lg:text-[35px] text-[20px] text-white">Fashion Show</p>
               <ol className="mt-2 lg:text-[25px] text-[15px]">
+              // <li>
+              //   1. <b>Event Theme :</b> Open
+              // </li>
               <li>
-                1. <b>Event Theme :</b> Open
-              </li>
-              <li>
-                2. <b>Participants :</b> 9-10 participants per team, strictly
+                1. <b>Participants :</b> 9-10 participants per team, strictly
                 from the same college.
               </li>
               <li>
-                3. <b>Rounds :</b> Single-round event, no preliminaries.
+                2. <b>Rounds :</b> Single-round event, no preliminaries.
               </li>
               <li>
-                4. <b>Time Allotment :</b> (10+2) minutes
+                3. <b>Time Allotment :</b> (10+2) minutes
               </li>
               <li>
-                5. <b>Vulgarity Policy :</b> Strict prohibition of vulgarity;
+                4. <b>Vulgarity Policy :</b> Strict prohibition of vulgarity;
                 adherence is mandatory.
               </li>
               <li>
-                6. <b>Crossover Teams :</b> Teams must consist solely of
+                5. <b>Crossover Teams :</b> Teams must consist solely of
                 participants from the same college; no crossover teams are
                 allowed.
               </li>
@@ -70,27 +70,27 @@ const E1 = () => {
             <div className="mt-2">
               <p className="lg:text-[35px] text-[20px] text-white">Cosplay</p>
               <ol className="mt-2 lg:text-[25px] text-[15px]">
+                // <li>
+                //   1. <b>Theme :</b> Open
+                // </li>
                 <li>
-                  1. <b>Theme :</b> Open
+                  1. <b>Participants :</b> Solo
                 </li>
                 <li>
-                  2. <b>Participants :</b> Solo
+                  2. <b>Rounds :</b> 1 Round only, no preliminaries
                 </li>
                 <li>
-                  3. <b>Rounds :</b> 1 Round only, no preliminaries
+                  3. <b>Time Allotment :</b> No Time Allotment
                 </li>
                 <li>
-                  4. <b>Time Allotment :</b> No Time Allotment
+                  4. <b>Vulgarity Policy :</b> Strictly no vulgarity allowed.
                 </li>
                 <li>
-                  5. <b>Vulgarity Policy :</b> Strictly no vulgarity allowed.
-                </li>
-                <li>
-                  6. <b>Dress and Makeup Room :</b> A dedicated dress and makeup
+                  5. <b>Dress and Makeup Room :</b> A dedicated dress and makeup
                   room will be provided
                 </li>
                 <li>
-                  7. <b>Note :</b> Rules are subject to change at the discretion
+                  6. <b>Note :</b> Rules are subject to change at the discretion
                   of the Organizing Committee.
                 </li>
               </ol>
