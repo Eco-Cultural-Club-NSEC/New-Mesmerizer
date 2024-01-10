@@ -37,7 +37,7 @@ const E1 = () => {
                 1. <b>Duration</b>: 6 minutes per team
               </li>
               <li>
-                2. <b>Team Size:</b> 6 members
+                2. <b>Team Size:</b> 6-9 members
               </li>
               <li>
                 3. <b>Dance Forms:</b> Classical, Western, or any creative style
@@ -50,10 +50,6 @@ const E1 = () => {
               <li>
                 5. <b>Music:</b> Teams to bring music on a Pendrive with a phone
                 backup.
-              </li>
-              <li>
-                6. <b>Theme: </b>Performances centred around Mythology, Magic,
-                and Mayhem.
               </li>
               <li>
                 6. <b>Eligibility:</b> All participants must be from the same
@@ -76,6 +72,7 @@ const E1 = () => {
                 Registration fees
               </span>
               <p className="lg:text-[40px] text-[15px] text-[#FF0000]">₹150 for a team of 6</p>
+              <p className="lg:text-[40px] text-[15px] text-[#FF0000]">₹10 for each extra member</p>
             </div>
           </div>
         </div>
