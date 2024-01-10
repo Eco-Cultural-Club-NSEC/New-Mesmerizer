@@ -30,7 +30,7 @@ const Grab = () => {
         </h2>
         <div class="flex mt-5 w-full style-flex-col md:flex-row gap-y-2 gap-x-8 sm:items-center md:justify-center">
           <a
-            href="https://play.google.com/store/apps/details?id=com.slickapp&hl=en&gl=US"
+            href="https://apps.apple.com/in/app/slick-slay-all-day/id6444398095"
             target="_blank"
             class="flex items-center justify-center w-full px-5 py-3 text-center text-white bg-white rounded-2xl sm:rounded-2xl md:w-auto"
             rel="noreferrer"
@@ -59,7 +59,7 @@ const Grab = () => {
             </div>
           </a>
           <a
-            href="https://apps.apple.com/in/app/slick-slay-all-day/id6444398095"
+            href="https://play.google.com/store/apps/details?id=com.slickapp&hl=en&gl=US"
             target="_blank"
             class="flex items-center justify-center w-full px-5 py-3 text-center text-white bg-white rounded-2xl sm:rounded-2xl md:w-auto"
             rel="noreferrer"
