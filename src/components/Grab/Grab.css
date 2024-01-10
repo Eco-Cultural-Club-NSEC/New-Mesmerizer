@@ -1,0 +1,23 @@
+@font-face {
+  font-family: acidGrotesk;
+  src: url("../../assets/AcidGrotesk-Regular.otf");
+}
+
+@font-face {
+  font-family: eSporta;
+  src: url("../../assets/Esporta.otf");
+}
+
+.hero {
+  background-image: url("../../assets/bg-1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: acidGrotesk;
+}
+
+.hero-font{
+    font-family: eSporta;
+    color: #FFFF00;
+    text-shadow: 1px 4px #000, 1px 6px #FF00CC
+}
