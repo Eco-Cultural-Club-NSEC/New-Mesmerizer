@@ -10,7 +10,7 @@ const App = lazy(() => import("./App"))
 const Home = lazy(() => import("./components/Home/Home"))
 const Events = lazy(() => import("./components/Events/Events"))
 const Gallery = lazy(() => import("./components/Gallery/Gallery"))
-// const ComingSoon = lazy(() => import("./components/ComingSoon/ComingSoon"))
+const ComingSoon = lazy(() => import("./components/ComingSoon/ComingSoon"))
 const E11 = lazy(() => import("./components/Events/enchantedEnsemble"))
 const E12 = lazy(() => import("./components/Events/sorcerousSolo"))
 const E3 = lazy(() => import("./components/Events/westernMystique"))
@@ -25,7 +25,7 @@ const E2 = lazy(() => import("./components/Events/enchantedLegends"))
 const E1 = lazy(() => import("./components/Events/mysticalControversy"))
 const Registration = lazy(() => import("./components/Form/parts/Registration"))
 const MultiRegs = lazy(() => import("./components/Form/parts/MultiRegs"))
-const Grab = lazy(()=>import("./components/Grab/Grab"))
+// const Grab = lazy(()=>import("./components/Grab/Grab"))
 
 
 const appRouter = [
@@ -39,7 +39,8 @@ const appRouter = [
   },
   {
     path: "/grab",
-    element: <Grab />
+    // element: <Grab />
+    element: <ComingSoon />
   },
   {
     path: "/gallery",
