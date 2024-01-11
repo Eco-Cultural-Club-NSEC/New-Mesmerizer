@@ -25,7 +25,7 @@ const E2 = lazy(() => import("./components/Events/enchantedLegends"))
 const E1 = lazy(() => import("./components/Events/mysticalControversy"))
 const Registration = lazy(() => import("./components/Form/parts/Registration"))
 const MultiRegs = lazy(() => import("./components/Form/parts/MultiRegs"))
-// const Grab = lazy(()=>import("./components/Grab/Grab"))
+const Grab = lazy(()=>import("./components/Grab/Grab"))
 
 
 const appRouter = [
